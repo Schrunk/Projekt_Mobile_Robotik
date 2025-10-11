@@ -16,7 +16,7 @@ bool handle_client(int client_socket) {
     close(client_socket);
 }
 
-int main() {
+int main(int argc, char* argv[]) {
     int server_fd, client_socket;
     struct sockaddr_in address;
     socklen_t addr_len = sizeof(address);
