@@ -41,6 +41,8 @@ public:
         if (shared_data == reinterpret_cast<void*>(-1)) {
             perror("shmat failed");
             return false;
+        } else {
+            shared_data->active_clients++;
         }
 
         // Attach to semaphore
@@ -58,6 +60,7 @@ public:
 
     void disconnect() {
         if (shared_data != nullptr) {
+            shared_data->active_clients--;
             shmdt(shared_data);
             shared_data = nullptr;
         }
@@ -85,8 +88,6 @@ public:
             strncpy(request.argument, argument.c_str(), sizeof(request.argument) - 1);
             request.argument[sizeof(request.argument) - 1] = '\0';
         }
-
-        shared_data->active_clients = client_id;
 
         unlock_semaphore(sem_id);
 
