@@ -44,7 +44,7 @@ public:
     }
     
     bool start() {
-        // Create socket
+        // create socket
         serverSocket = socket(AF_INET, SOCK_STREAM, 0);
         if (serverSocket < 0) {
             std::cerr << "Error creating socket" << std::endl;
