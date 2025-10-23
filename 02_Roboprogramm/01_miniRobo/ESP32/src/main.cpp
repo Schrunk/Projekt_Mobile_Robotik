@@ -126,7 +126,7 @@ void cmd_vel_callback(const void *msgin) {
   // Debug-Ausgaben
   Serial.println("=== Neue cmd_vel Nachricht ===");
   Serial.print("linear.x: ");
-  Serial.println(linear, 3);   // mit 3 Nachkommastellen
+  Serial.println(linear, 3);
   Serial.print("angular.z: ");
   Serial.println(angular, 3);
   Serial.print("stepsize: ");
@@ -179,8 +179,8 @@ void setup() {
   // --- WLAN / micro-ROS Agent ---
   IPAddress agent_ip(192, 168, 178, 141);
   uint16_t agent_port = 8888;
-  char ssid[] = "MKWlan";          // ✅ Lösung 1: kein const
-  char psk[]  = "MK57241381";      // ✅ Lösung 1: kein const
+  char ssid[] = "MKWlan";
+  char psk[]  = "MK57241381";
 
   set_microros_wifi_transports(ssid, psk, agent_ip, agent_port);
 
