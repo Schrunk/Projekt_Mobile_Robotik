@@ -1,0 +1,4 @@
+source;share/pong_game/local_setup.bash
+source;share/pong_game/local_setup.dsv
+source;share/pong_game/local_setup.sh
+source;share/pong_game/local_setup.zsh

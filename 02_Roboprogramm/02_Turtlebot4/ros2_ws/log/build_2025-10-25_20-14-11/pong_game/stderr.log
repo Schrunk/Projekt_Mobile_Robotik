@@ -1,0 +1,14 @@
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/terminalPub.cpp:1:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+    1 | #pragma [01;35m[Konce[m[K
+      |         [01;35m[K^~~~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/terminalPub.cpp:[m[K In constructor ‘[01m[KTerminalPublisher::TerminalPublisher()[m[K’:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/terminalPub.cpp:13:5:[m[K [01;31m[Kerror: [m[K‘[01m[KinputThread[m[K’ was not declared in this scope
+   13 |     [01;31m[KinputThread[m[K = std::thread([this]() {this->publishInput(); });
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/terminalPub.cpp:[m[K In destructor ‘[01m[Kvirtual TerminalPublisher::~TerminalPublisher()[m[K’:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/terminalPub.cpp:17:9:[m[K [01;31m[Kerror: [m[K‘[01m[KinputThread[m[K’ was not declared in this scope
+   17 |     if ([01;31m[KinputThread[m[K.joinable()) {
+      |         [01;31m[K^~~~~~~~~~~[m[K
+gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:90: CMakeFiles/pong_game.dir/src/classes/terminalPub.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2
+gmake[1]: *** [Makefile:146: all] Error 2

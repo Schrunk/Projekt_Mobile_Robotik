@@ -1,0 +1,33 @@
+gmake[1]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+gmake[2]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[35m[1mConsolidate compiler generated dependencies of target pong_game[0m
+gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[  8%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o[0m
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/backToStartState.cpp:[m[K In constructor ‘[01m[KBackToStartState::BackToStartState(StateMachine*)[m[K’:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/backToStartState.cpp:9:7:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KBackToStartState[m[K’ does not have any field named ‘[01m[K_stateMachine[m[K’
+    9 |     : [01;31m[K_stateMachine[m[K(stateMachine) {
+      |       [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/backToStartState.cpp:9:33:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KState::State()[m[K’
+    9 |     : _stateMachine(stateMachine[01;31m[K)[m[K {
+      |                                 [01;31m[K^[m[K
+In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/backToStartState.hpp:4[m[K,
+                 from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/backToStartState.cpp:4[m[K:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/state.hpp:31:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KState::State(StateMachine*)[m[K’
+   31 |     explicit [01;36m[KState[m[K(StateMachine* stateMachine) : _stateMachine(stateMachine) {};
+      |              [01;36m[K^~~~~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/state.hpp:31:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/state.hpp:10:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr State::State(const State&)[m[K’
+   10 | class [01;36m[KState[m[K {
+      |       [01;36m[K^~~~~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/state.hpp:10:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[ 25%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.o[0m
+gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:174: CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o] Error 1
+gmake[3]: *** Waiting for unfinished jobs....
+gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+gmake[2]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+gmake[1]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2
+gmake[1]: *** [Makefile:146: all] Error 2

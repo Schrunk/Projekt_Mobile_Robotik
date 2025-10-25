@@ -1,0 +1,8 @@
+source;share/pong_game/hook/cmake_prefix_path.ps1
+source;share/pong_game/hook/cmake_prefix_path.dsv
+source;share/pong_game/hook/cmake_prefix_path.sh
+source;share/pong_game/local_setup.bash
+source;share/pong_game/local_setup.dsv
+source;share/pong_game/local_setup.ps1
+source;share/pong_game/local_setup.sh
+source;share/pong_game/local_setup.zsh

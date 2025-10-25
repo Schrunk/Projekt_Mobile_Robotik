@@ -1,0 +1,42 @@
+[0.013s] Invoking command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game -- -j2 -l2
+[0.015s] gmake[1]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.032s] gmake[2]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.042s] gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.050s] [35m[1mConsolidate compiler generated dependencies of target pong_game[0m
+[0.372s] gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.380s] gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.389s] [ 40%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/main.cpp.o[0m
+[0.391s] [ 40%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.o[0m
+[1.526s] In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/turtlebot4.cpp:4[m[K:
+[1.526s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/turtlebot4.hpp:63:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[1.526s]    63 | }
+[1.527s]       |  [01;31m[K^[m[K
+[1.527s]       |  [32m[K;[m[K
+[1.532s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/turtlebot4.cpp:[m[K In constructor ‘[01m[KTurtleBot4::TurtleBot4()[m[K’:
+[1.533s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/turtlebot4.cpp:14:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klightring_pub_[m[K’ was not declared in this scope
+[1.533s]    14 |     [01;31m[Klightring_pub_[m[K = this->create_publisher
+[1.533s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.536s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/turtlebot4.cpp:[m[K In member function ‘[01m[Kvoid TurtleBot4::setLightring(LightringColor)[m[K’:
+[1.536s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/turtlebot4.cpp:36:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct irobot_create_msgs::msg::LightringLeds_<std::allocator<void> >[m[K’ has no member named ‘[01m[Koverridde_system[m[K’; did you mean ‘[01m[Koverride_system[m[K’?
+[1.536s]    36 |     lightring_msg.[01;31m[Koverridde_system[m[K = true;
+[1.537s]       |                   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.537s]       |                   [32m[Koverride_system[m[K
+[1.543s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/turtlebot4.cpp:64:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klightring_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Klightring_msg[m[K’?
+[1.543s]    64 |     [01;31m[Klightring_pub_[m[K->publish(lightring_msg);
+[1.544s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.544s]       |     [32m[Klightring_msg[m[K
+[1.567s] In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.hpp:7[m[K,
+[1.568s]                  from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/main.cpp:5[m[K:
+[1.568s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/turtlebot4.hpp:63:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[1.568s]    63 | }
+[1.569s]       |  [01;31m[K^[m[K
+[1.569s]       |  [32m[K;[m[K
+[1.819s] gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:76: CMakeFiles/pong_game.dir/src/main.cpp.o] Error 1
+[1.819s] gmake[3]: *** Waiting for unfinished jobs....
+[1.870s] gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:104: CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.o] Error 1
+[1.871s] gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[1.871s] gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2
+[1.871s] gmake[2]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[1.872s] gmake[1]: *** [Makefile:146: all] Error 2
+[1.872s] gmake[1]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[1.873s] Invoked command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game -- -j2 -l2
