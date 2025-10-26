@@ -1,0 +1,174 @@
+[0.000000] (-) TimerEvent: {}
+[0.000239] (pong_game) JobQueued: {'identifier': 'pong_game', 'dependencies': OrderedDict()}
+[0.000393] (pong_game) JobStarted: {'identifier': 'pong_game'}
+[0.006994] (pong_game) JobProgress: {'identifier': 'pong_game', 'progress': 'cmake'}
+[0.010618] (pong_game) Command: {'cmd': ['/usr/bin/cmake', '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws', '-DCMAKE_INSTALL_PREFIX=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game'], 'cwd': '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'franz'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/franz'), ('OLDPWD', '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2334'), ('MAKEFLAGS', ''), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MAKE_TERMERR', '/dev/pts/0'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'franz'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'franz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-server:@/tmp/.ICE-unix/2311,unix/ubuntu-server:/tmp/.ICE-unix/2311'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/df137d7d_6507_4075_936d_b6aba9ffa30a'), ('GNOME_SETUP_DISPLAY', ':1'), ('MAKELEVEL', '1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7B6TE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.85'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('MAKE_TERMOUT', '/dev/pts/0'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MFLAGS', ''), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099592] (-) TimerEvent: {}
+[0.119769] (pong_game) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.174881] (pong_game) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.182041] (pong_game) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199679] (-) TimerEvent: {}
+[0.260581] (pong_game) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.266065] (pong_game) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.266298] (pong_game) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.266633] (pong_game) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.271561] (pong_game) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299793] (-) TimerEvent: {}
+[0.366733] (pong_game) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.372098] (pong_game) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.372368] (pong_game) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.372716] (pong_game) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.378215] (pong_game) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399872] (-) TimerEvent: {}
+[0.450145] (pong_game) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.499975] (-) TimerEvent: {}
+[0.511689] (pong_game) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.536324] (pong_game) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.539323] (pong_game) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.543853] (pong_game) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.552706] (pong_game) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.562452] (pong_game) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.585109] (pong_game) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.586851] (pong_game) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600185] (-) TimerEvent: {}
+[0.625146] (pong_game) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.642992] (pong_game) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.668036] (pong_game) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.676444] (pong_game) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.700272] (-) TimerEvent: {}
+[0.766899] (pong_game) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.768178] (pong_game) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.800507] (-) TimerEvent: {}
+[0.860993] (pong_game) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.862060] (pong_game) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.890907] (pong_game) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[0.900597] (-) TimerEvent: {}
+[0.911626] (pong_game) StdoutLine: {'line': b'-- Found irobot_create_msgs: 2.1.0 (/opt/ros/humble/share/irobot_create_msgs/cmake)\n'}
+[0.931987] (pong_game) StdoutLine: {'line': b'-- Found nav2_msgs: 1.1.19 (/opt/ros/humble/share/nav2_msgs/cmake)\n'}
+[1.000721] (-) TimerEvent: {}
+[1.040084] (pong_game) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.097139] (pong_game) StdoutLine: {'line': b'-- Generating done\n'}
+[1.100829] (-) TimerEvent: {}
+[1.120031] (pong_game) StdoutLine: {'line': b'-- Build files have been written to: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game\n'}
+[1.125876] (pong_game) CommandEnded: {'returncode': 0}
+[1.133144] (pong_game) JobProgress: {'identifier': 'pong_game', 'progress': 'build'}
+[1.134498] (pong_game) Command: {'cmd': ['/usr/bin/cmake', '--build', '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game', '--', '-j2', '-l2'], 'cwd': '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'franz'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/franz'), ('OLDPWD', '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2334'), ('MAKEFLAGS', ''), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MAKE_TERMERR', '/dev/pts/0'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'franz'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'franz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-server:@/tmp/.ICE-unix/2311,unix/ubuntu-server:/tmp/.ICE-unix/2311'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/df137d7d_6507_4075_936d_b6aba9ffa30a'), ('GNOME_SETUP_DISPLAY', ':1'), ('MAKELEVEL', '1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7B6TE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.85'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('MAKE_TERMOUT', '/dev/pts/0'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MFLAGS', ''), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.142771] (pong_game) StdoutLine: {'line': b"gmake[1]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'\n"}
+[1.160040] (pong_game) StdoutLine: {'line': b"gmake[2]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'\n"}
+[1.163162] (pong_game) StdoutLine: {'line': b"gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'\n"}
+[1.168725] (pong_game) StdoutLine: {'line': b"gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'\n"}
+[1.173615] (pong_game) StdoutLine: {'line': b"gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'\n"}
+[1.182117] (pong_game) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/terminalPub.cpp.o\x1b[0m\n'}
+[1.182700] (pong_game) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/pong_game.dir/src/main.cpp.o\x1b[0m\n'}
+[1.200906] (-) TimerEvent: {}
+[1.301285] (-) TimerEvent: {}
+[1.401724] (-) TimerEvent: {}
+[1.502093] (-) TimerEvent: {}
+[1.602491] (-) TimerEvent: {}
+[1.702951] (-) TimerEvent: {}
+[1.803337] (-) TimerEvent: {}
+[1.903716] (-) TimerEvent: {}
+[2.004103] (-) TimerEvent: {}
+[2.104501] (-) TimerEvent: {}
+[2.205009] (-) TimerEvent: {}
+[2.305449] (-) TimerEvent: {}
+[2.405887] (-) TimerEvent: {}
+[2.506277] (-) TimerEvent: {}
+[2.606681] (-) TimerEvent: {}
+[2.707091] (-) TimerEvent: {}
+[2.807509] (-) TimerEvent: {}
+[2.907903] (-) TimerEvent: {}
+[2.948365] (pong_game) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o\x1b[0m\n'}
+[3.008012] (-) TimerEvent: {}
+[3.108371] (-) TimerEvent: {}
+[3.208715] (-) TimerEvent: {}
+[3.309113] (-) TimerEvent: {}
+[3.409473] (-) TimerEvent: {}
+[3.509825] (-) TimerEvent: {}
+[3.511372] (pong_game) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o\x1b[0m\n'}
+[3.609928] (-) TimerEvent: {}
+[3.710463] (-) TimerEvent: {}
+[3.810867] (-) TimerEvent: {}
+[3.911259] (-) TimerEvent: {}
+[4.011654] (-) TimerEvent: {}
+[4.112146] (-) TimerEvent: {}
+[4.212629] (-) TimerEvent: {}
+[4.313146] (-) TimerEvent: {}
+[4.413629] (-) TimerEvent: {}
+[4.514086] (-) TimerEvent: {}
+[4.614535] (-) TimerEvent: {}
+[4.714965] (-) TimerEvent: {}
+[4.815414] (-) TimerEvent: {}
+[4.915861] (-) TimerEvent: {}
+[5.016331] (-) TimerEvent: {}
+[5.116738] (-) TimerEvent: {}
+[5.217220] (-) TimerEvent: {}
+[5.317694] (-) TimerEvent: {}
+[5.418099] (-) TimerEvent: {}
+[5.518835] (-) TimerEvent: {}
+[5.619414] (-) TimerEvent: {}
+[5.720001] (-) TimerEvent: {}
+[5.820505] (-) TimerEvent: {}
+[5.921052] (-) TimerEvent: {}
+[6.021589] (-) TimerEvent: {}
+[6.122089] (-) TimerEvent: {}
+[6.222599] (-) TimerEvent: {}
+[6.323090] (-) TimerEvent: {}
+[6.423553] (-) TimerEvent: {}
+[6.524174] (-) TimerEvent: {}
+[6.624632] (-) TimerEvent: {}
+[6.725186] (-) TimerEvent: {}
+[6.825740] (-) TimerEvent: {}
+[6.926211] (-) TimerEvent: {}
+[7.031705] (-) TimerEvent: {}
+[7.132118] (-) TimerEvent: {}
+[7.232545] (-) TimerEvent: {}
+[7.332940] (-) TimerEvent: {}
+[7.441066] (-) TimerEvent: {}
+[7.541459] (-) TimerEvent: {}
+[7.641859] (-) TimerEvent: {}
+[7.742260] (-) TimerEvent: {}
+[7.842731] (-) TimerEvent: {}
+[7.944143] (-) TimerEvent: {}
+[8.044664] (-) TimerEvent: {}
+[8.108018] (pong_game) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o\x1b[0m\n'}
+[8.144761] (-) TimerEvent: {}
+[8.245144] (-) TimerEvent: {}
+[8.276352] (pong_game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.cpp:9\x1b[m\x1b[K:\n'}
+[8.276758] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:6:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ksensor_msgs/msg/laser_scan.hpp: No such file or directory\n'}
+[8.276957] (pong_game) StderrLine: {'line': b'    6 | #include \x1b[01;31m\x1b[K"sensor_msgs/msg/laser_scan.hpp"\x1b[m\x1b[K\n'}
+[8.277179] (pong_game) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.277375] (pong_game) StderrLine: {'line': b'compilation terminated.\n'}
+[8.279448] (pong_game) StderrLine: {'line': b'gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:132: CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o] Error 1\n'}
+[8.279698] (pong_game) StderrLine: {'line': b'gmake[3]: *** Waiting for unfinished jobs....\n'}
+[8.345841] (-) TimerEvent: {}
+[8.446302] (-) TimerEvent: {}
+[8.546933] (-) TimerEvent: {}
+[8.647720] (-) TimerEvent: {}
+[8.749695] (-) TimerEvent: {}
+[8.851150] (-) TimerEvent: {}
+[8.952116] (-) TimerEvent: {}
+[9.052756] (-) TimerEvent: {}
+[9.153230] (-) TimerEvent: {}
+[9.253667] (-) TimerEvent: {}
+[9.355591] (-) TimerEvent: {}
+[9.456098] (-) TimerEvent: {}
+[9.559880] (-) TimerEvent: {}
+[9.662881] (-) TimerEvent: {}
+[9.763636] (-) TimerEvent: {}
+[9.864879] (-) TimerEvent: {}
+[9.966854] (-) TimerEvent: {}
+[10.067347] (-) TimerEvent: {}
+[10.167725] (-) TimerEvent: {}
+[10.268046] (-) TimerEvent: {}
+[10.368372] (-) TimerEvent: {}
+[10.468725] (-) TimerEvent: {}
+[10.559454] (pong_game) StdoutLine: {'line': b"gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'\n"}
+[10.560977] (pong_game) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2\n'}
+[10.561219] (pong_game) StdoutLine: {'line': b"gmake[2]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'\n"}
+[10.561561] (pong_game) StderrLine: {'line': b'gmake[1]: *** [Makefile:146: all] Error 2\n'}
+[10.561801] (pong_game) StdoutLine: {'line': b"gmake[1]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'\n"}
+[10.563853] (pong_game) CommandEnded: {'returncode': 2}
+[10.568785] (-) TimerEvent: {}
+[10.581834] (pong_game) JobEnded: {'identifier': 'pong_game', 'rc': 2}
+[10.592518] (-) EventReactorShutdown: {}

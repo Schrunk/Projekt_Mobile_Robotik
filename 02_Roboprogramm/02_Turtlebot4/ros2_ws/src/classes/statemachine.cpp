@@ -1,11 +1,10 @@
 #include "statemachine.hpp"
 #include "states/initState.hpp"
 #include "states/idleState.hpp"
-// #include "states/bounceState.hpp"
-// #include "states/driveState.hpp"
-// #include "states/backToStartState.hpp"
+#include "states/bounceState.hpp"
+#include "states/driveState.hpp"
+#include "states/backToStartState.hpp"
 // #include "states/errorState.hpp"
-// #include "states/setupState.hpp"
 
 
 // State Machine Constructor
@@ -13,7 +12,6 @@ StateMachine::StateMachine()
     : _currentState(nullptr), _currentStateType(StateType::INIT_STATE), 
     _isRunning(false), _isInitialized(false) {
 }
-
 
 // State Machine Destructor
 StateMachine::~StateMachine() {
@@ -23,16 +21,14 @@ StateMachine::~StateMachine() {
     _states.clear();
 }
 
-
 // initialize the state machine with all states
 void StateMachine::initialize() {
     // register all states
     registerState(StateType::INIT_STATE, std::make_unique<InitState>(this));
     registerState(StateType::IDLE, std::make_unique<IdleState>(this));
-    // registerState(StateType::SETUP, std::make_unique<SetupState>(this));
-    // registerState(StateType::BOUNCE, std::make_unique<BounceState>(this));
-    // registerState(StateType::DRIVE, std::make_unique<DriveState>(this));
-    // registerState(StateType::BACK_TO_START, std::make_unique<BackToStartState>(this));
+    registerState(StateType::BOUNCE, std::make_unique<BounceState>(this));
+    registerState(StateType::DRIVE, std::make_unique<DriveState>(this));
+    registerState(StateType::BACK_TO_START, std::make_unique<BackToStartState>(this));
     // registerState(StateType::ERROR, std::make_unique<ErrorState>(this));
     
     // set initial state
@@ -48,7 +44,6 @@ void StateMachine::initialize() {
     _isRunning = true;
 }
 
-
 // run one iteration of the state machine
 void StateMachine::update() {
     if (!_isInitialized || !_isRunning || !_currentState) {
@@ -58,7 +53,6 @@ void StateMachine::update() {
     // execute current state
     _currentState->run();
 }
-
 
 // transition to a new state
 void StateMachine::transitionTo(StateType newState) {
@@ -94,25 +88,42 @@ void StateMachine::transitionTo(StateType newState) {
     _currentState->onEnter();
 }
 
-
 // get the current state type
 StateType StateMachine::getCurrentStateType() const {
     return _currentStateType;
 }
 
+// get line references
+void StateMachine::getLineReferences(float& a1, float& b1, float& c1,
+                                     float& a2, float& b2, float& c2) const {
+    a1 = _a1;
+    b1 = _b1;
+    c1 = _c1;
+    a2 = _a2;
+    b2 = _b2;
+    c2 = _c2;
 
-// get the current state name for debugging
-// const char* StateMachine::getCurrentStateName() const
-// {
-//     return _currentState ? _currentState->getName() : "UNKNOWN";
-// }
-
+    return;
+}
 
 // check if the state machine is running
 bool StateMachine::isRunning() const {
     return _isRunning;
 }
 
+// set line references
+void StateMachine::setLineReference(float a1, float b1, float c1,
+                                       float a2, float b2, float c2) {
+    _a1 = a1;
+    _b1 = b1;
+    _c1 = c1;
+
+    _a2 = a2;
+    _b2 = b2;
+    _c2 = c2;
+
+    return;
+}
 
 // stop the state machine
 void StateMachine::stop() {
@@ -120,9 +131,18 @@ void StateMachine::stop() {
 
     if (_currentState) {
         _currentState->onExit();
+
     }
 }
 
+// set scores
+void StateMachine::increaseScore(int player) {
+    if (player == 1) {
+        _score1++;
+    } else if (player == 2) {
+        _score2++;
+    }
+}
 
 // register a state with the state machine
 void StateMachine::registerState(StateType stateType, std::unique_ptr<State> state) {

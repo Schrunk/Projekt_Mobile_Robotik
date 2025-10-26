@@ -33,7 +33,10 @@ build: check-deps
 # Publisher starten
 run:
 	@echo "🚀 Starte $(PKG_NAME)/$(NODE_NAME) ..."
-	@bash -c "source \"$(CURDIR)/install/setup.bash\" && ros2 run $(PKG_NAME) $(NODE_NAME)"
+	@bash -c "source \"$(CURDIR)/install/setup.bash\"" \
+	ros2 launch turtlebot4_navigation turtlebot4_navigation.launch.py & \
+	sleep 10; \
+	bash -c "source \"$(CURDIR)/install/setup.bash\" && ros2 launch turtlebot4_navigation nav2.launch.py && ros2 run $(PKG_NAME) $(NODE_NAME)"
 
 # Sauber aufräumen
 clean:

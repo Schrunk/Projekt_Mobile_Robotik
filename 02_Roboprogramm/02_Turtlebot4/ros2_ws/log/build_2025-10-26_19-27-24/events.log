@@ -1,0 +1,200 @@
+[0.000000] (-) TimerEvent: {}
+[0.000300] (pong_game) JobQueued: {'identifier': 'pong_game', 'dependencies': OrderedDict()}
+[0.000444] (pong_game) JobStarted: {'identifier': 'pong_game'}
+[0.006022] (pong_game) JobProgress: {'identifier': 'pong_game', 'progress': 'cmake'}
+[0.009484] (pong_game) JobProgress: {'identifier': 'pong_game', 'progress': 'build'}
+[0.010383] (pong_game) Command: {'cmd': ['/usr/bin/cmake', '--build', '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game', '--', '-j2', '-l2'], 'cwd': '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'franz'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/franz'), ('OLDPWD', '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2334'), ('MAKEFLAGS', ''), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MAKE_TERMERR', '/dev/pts/0'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'franz'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'franz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-server:@/tmp/.ICE-unix/2311,unix/ubuntu-server:/tmp/.ICE-unix/2311'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/df137d7d_6507_4075_936d_b6aba9ffa30a'), ('GNOME_SETUP_DISPLAY', ':1'), ('MAKELEVEL', '1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7B6TE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.85'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('MAKE_TERMOUT', '/dev/pts/0'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MFLAGS', ''), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.031197] (pong_game) StdoutLine: {'line': b"gmake[1]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'\n"}
+[0.058057] (pong_game) StdoutLine: {'line': b"gmake[2]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'\n"}
+[0.060774] (pong_game) StdoutLine: {'line': b"gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'\n"}
+[0.070114] (pong_game) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pong_game\x1b[0m\n'}
+[0.099014] (-) TimerEvent: {}
+[0.199433] (-) TimerEvent: {}
+[0.299971] (-) TimerEvent: {}
+[0.400318] (-) TimerEvent: {}
+[0.418367] (pong_game) StdoutLine: {'line': b"gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'\n"}
+[0.434844] (pong_game) StdoutLine: {'line': b"gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'\n"}
+[0.442281] (pong_game) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o\x1b[0m\n'}
+[0.442830] (pong_game) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o\x1b[0m\n'}
+[0.500422] (-) TimerEvent: {}
+[0.600823] (-) TimerEvent: {}
+[0.701302] (-) TimerEvent: {}
+[0.801779] (-) TimerEvent: {}
+[0.902377] (-) TimerEvent: {}
+[1.002814] (-) TimerEvent: {}
+[1.103219] (-) TimerEvent: {}
+[1.203665] (-) TimerEvent: {}
+[1.304104] (-) TimerEvent: {}
+[1.404554] (-) TimerEvent: {}
+[1.504999] (-) TimerEvent: {}
+[1.605415] (-) TimerEvent: {}
+[1.705825] (-) TimerEvent: {}
+[1.806275] (-) TimerEvent: {}
+[1.906727] (-) TimerEvent: {}
+[1.989136] (pong_game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:10\x1b[m\x1b[K:\n'}
+[1.989755] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.hpp:41:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSubscriber\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99 does not name a template type\n'}
+[1.990059] (pong_game) StderrLine: {'line': b'   41 |     rclcpp::\x1b[01;31m\x1b[KSubscriber\x1b[m\x1b[K<std_msgs::msg::String>::SharedPtr _inputSubscription;\n'}
+[1.990323] (pong_game) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.006822] (-) TimerEvent: {}
+[2.008069] (pong_game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.cpp:9\x1b[m\x1b[K:\n'}
+[2.008444] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.008935] (pong_game) StderrLine: {'line': b'   42 |     rclcpp::Subscription<\x1b[01;31m\x1b[Ksensor_msgs\x1b[m\x1b[K::msg::LaserScan>::SharedPtr _laserSubscription;\n'}
+[2.009213] (pong_game) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.009570] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.009856] (pong_game) StderrLine: {'line': b'   42 |     rclcpp::Subscription<sensor_msgs::msg::LaserScan\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr _laserSubscription;\n'}
+[2.010144] (pong_game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.010415] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[2.010682] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[2.010938] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[2.011226] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.011480] (pong_game) StderrLine: {'line': b'   42 |     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K _laserSubscription;\n'}
+[2.011700] (pong_game) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.011942] (pong_game) StderrLine: {'line': b'      |                                                                 \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.012261] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_laserSubscription\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.012618] (pong_game) StderrLine: {'line': b'   42 |     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr \x1b[01;31m\x1b[K_laserSubscription\x1b[m\x1b[K;\n'}
+[2.012848] (pong_game) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.013700] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:44:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.013990] (pong_game) StderrLine: {'line': b'   44 |     void laserCallback(const \x1b[01;31m\x1b[Ksensor_msgs\x1b[m\x1b[K::msg::LaserScan::SharedPtr msg);\n'}
+[2.014314] (pong_game) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.014560] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:44:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.014813] (pong_game) StderrLine: {'line': b'   44 |     void laserCallback(const sensor_msgs::msg\x1b[01;31m\x1b[K::\x1b[m\x1b[KLaserScan::SharedPtr msg);\n'}
+[2.015076] (pong_game) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.015320] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:44:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.015625] (pong_game) StderrLine: {'line': b'   44 |     void laserCallback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst sensor_msgs::msg\x1b[01;31m\x1b[K:\x1b[m\x1b[K\x1b[32m\x1b[K:\x1b[m\x1b[KLaserScan::SharedPtr msg);\n'}
+[2.015866] (pong_game) StderrLine: {'line': b'      |                       \x1b[34m\x1b[K~\x1b[m\x1b[K                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[2.016203] (pong_game) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.016456] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:44:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.016705] (pong_game) StderrLine: {'line': b'   44 |     void laserCallback(const sensor_msgs::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::LaserScan::SharedPtr msg);\n'}
+[2.016945] (pong_game) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.017198] (pong_game) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.017836] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:44:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLaserScan\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.018106] (pong_game) StderrLine: {'line': b'   44 |     void laserCallback(const sensor_msgs::msg::\x1b[01;31m\x1b[KLaserScan\x1b[m\x1b[K::SharedPtr msg);\n'}
+[2.018334] (pong_game) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.019870] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.hpp:56:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KString\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.020143] (pong_game) StderrLine: {'line': b'   56 |     void inputCallback(const std_msgs::msg::\x1b[01;31m\x1b[KString\x1b[m\x1b[K::SharedPtr msg);\n'}
+[2.020422] (pong_game) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.020672] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.hpp:56:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.020927] (pong_game) StderrLine: {'line': b'   56 |     void inputCallback(const std_msgs::msg::String::SharedPtr \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K);\n'}
+[2.021146] (pong_game) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.021357] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.hpp:56:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.021571] (pong_game) StderrLine: {'line': b'   56 |     void inputCallback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst std_msgs::msg::String::SharedPtr\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[Kmsg\x1b[m\x1b[K);\n'}
+[2.021815] (pong_game) StderrLine: {'line': b'      |                       \x1b[34m\x1b[K~\x1b[m\x1b[K                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~\x1b[m\x1b[K\n'}
+[2.022226] (pong_game) StderrLine: {'line': b'      |                                                              \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.022486] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.hpp:56:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.022872] (pong_game) StderrLine: {'line': b'   56 |     void inputCallback(const std_msgs::msg::String::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K msg);\n'}
+[2.023265] (pong_game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.023489] (pong_game) StderrLine: {'line': b'      |                                                              \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.024452] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.hpp:56:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.024851] (pong_game) StderrLine: {'line': b'   56 |     void inputCallback(const std_msgs::msg::String::SharedPtr \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K);\n'}
+[2.025136] (pong_game) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.044389] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void DriveState::onEnter()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.045009] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:32:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_inputSubscription\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[K_hazardSubscription\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.045512] (pong_game) StderrLine: {'line': b'   32 |     \x1b[01;31m\x1b[K_inputSubscription\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::String>(\n'}
+[2.045842] (pong_game) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.046171] (pong_game) StderrLine: {'line': b'      |     \x1b[32m\x1b[K_hazardSubscription\x1b[m\x1b[K\n'}
+[2.047230] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:32:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KString\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.047615] (pong_game) StderrLine: {'line': b'   32 |     _inputSubscription = this->create_subscription<std_msgs::msg::\x1b[01;31m\x1b[KString\x1b[m\x1b[K>(\n'}
+[2.047967] (pong_game) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.052718] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:32:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KDriveState::create_subscription<<expression error> >(const char [7], int, std::_Bind_helper<false, void (DriveState::*)(...), DriveState*, const std::_Placeholder<1>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.053139] (pong_game) StderrLine: {'line': b'   32 |     _inputSubscription = \x1b[01;31m\x1b[Kthis->create_subscription<std_msgs::msg::String>(\x1b[m\x1b[K\n'}
+[2.053542] (pong_game) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.053862] (pong_game) StderrLine: {'line': b'   33 | \x1b[01;31m\x1b[K      "/input", 10,\x1b[m\x1b[K\n'}
+[2.054221] (pong_game) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~\x1b[m\x1b[K                                                       \n'}
+[2.054590] (pong_game) StderrLine: {'line': b'   34 | \x1b[01;31m\x1b[K      std::bind(&DriveState::inputCallback, this, std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[2.055409] (pong_game) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K \n'}
+[2.055741] (pong_game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.056035] (pong_game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.056382] (pong_game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.056670] (pong_game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:3\x1b[m\x1b[K:\n'}
+[2.056979] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.057290] (pong_game) StderrLine: {'line': b'  219 |   \x1b[01;36m\x1b[Kcreate_subscription\x1b[m\x1b[K(\n'}
+[2.057521] (pong_game) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.057761] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.058112] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:32:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.058364] (pong_game) StderrLine: {'line': b'   32 |     _inputSubscription = \x1b[01;31m\x1b[Kthis->create_subscription<std_msgs::msg::String>(\x1b[m\x1b[K\n'}
+[2.058631] (pong_game) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.058913] (pong_game) StderrLine: {'line': b'   33 | \x1b[01;31m\x1b[K      "/input", 10,\x1b[m\x1b[K\n'}
+[2.059163] (pong_game) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~\x1b[m\x1b[K                                                       \n'}
+[2.059396] (pong_game) StderrLine: {'line': b'   34 | \x1b[01;31m\x1b[K      std::bind(&DriveState::inputCallback, this, std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[2.059637] (pong_game) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K \n'}
+[2.075319] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:42:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_positionSubscription\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.075960] (pong_game) StderrLine: {'line': b'   42 |     \x1b[01;31m\x1b[K_positionSubscription\x1b[m\x1b[K = this->create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>(\n'}
+[2.076461] (pong_game) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.077339] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:42:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoseWithCovarianceStamped\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.077629] (pong_game) StderrLine: {'line': b'   42 |     _positionSubscription = this->create_subscription<geometry_msgs::msg::\x1b[01;31m\x1b[KPoseWithCovarianceStamped\x1b[m\x1b[K>(\n'}
+[2.077919] (pong_game) StderrLine: {'line': b'      |                                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.078179] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:44:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoseWithCovarianceStamped\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.078537] (pong_game) StderrLine: {'line': b'   44 |         [this](const geometry_msgs::msg::\x1b[01;31m\x1b[KPoseWithCovarianceStamped\x1b[m\x1b[K::SharedPtr msg) {\n'}
+[2.078834] (pong_game) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.079088] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[2.079345] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:49:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.079588] (pong_game) StderrLine: {'line': b'   49 |     })\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[2.079839] (pong_game) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.080080] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void DriveState::onEnter()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.080410] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:49:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.080717] (pong_game) StderrLine: {'line': b'   49 |     })\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[2.080972] (pong_game) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.081210] (pong_game) StderrLine: {'line': b'      |       \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.081439] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:42:101:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.081825] (pong_game) StderrLine: {'line': b'   42 |     _positionSubscription = this->create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>\x1b[01;36m\x1b[K(\x1b[m\x1b[K\n'}
+[2.082096] (pong_game) StderrLine: {'line': b'      |                                                                                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.083224] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void DriveState::onExit()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.083550] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:79:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeomertry_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.083867] (pong_game) StderrLine: {'line': b'   79 |     \x1b[01;31m\x1b[Kgeomertry_msgs\x1b[m\x1b[K::msg::Twist stopMsg;\n'}
+[2.084158] (pong_game) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.088603] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:80:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KstopMsg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.088992] (pong_game) StderrLine: {'line': b'   80 |     \x1b[01;31m\x1b[KstopMsg\x1b[m\x1b[K.linear.x = 0.0;\n'}
+[2.089307] (pong_game) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.098078] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:87:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_inputSubscription\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[K_hazardSubscription\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.098395] (pong_game) StderrLine: {'line': b'   87 |     \x1b[01;31m\x1b[K_inputSubscription\x1b[m\x1b[K.reset();\n'}
+[2.098665] (pong_game) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.098918] (pong_game) StderrLine: {'line': b'      |     \x1b[32m\x1b[K_hazardSubscription\x1b[m\x1b[K\n'}
+[2.101143] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.101504] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:107:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KString\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.101836] (pong_game) StderrLine: {'line': b'  107 | void DriveState::inputCallback(const std_msgs::msg::\x1b[01;31m\x1b[KString\x1b[m\x1b[K::SharedPtr msg) {\n'}
+[2.102069] (pong_game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.102444] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:107:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.102708] (pong_game) StderrLine: {'line': b'  107 | void DriveState::inputCallback(const std_msgs::msg::String::SharedPtr \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K) {\n'}
+[2.102946] (pong_game) StderrLine: {'line': b'      |                                                                       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.103198] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:107:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.103470] (pong_game) StderrLine: {'line': b'  107 | void DriveState::inputCallback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst std_msgs::msg::String::SharedPtr\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[Kmsg\x1b[m\x1b[K) {\n'}
+[2.103787] (pong_game) StderrLine: {'line': b'      |                               \x1b[34m\x1b[K~\x1b[m\x1b[K                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~\x1b[m\x1b[K\n'}
+[2.104049] (pong_game) StderrLine: {'line': b'      |                                                                      \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.104372] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:107:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.104695] (pong_game) StderrLine: {'line': b'  107 | void DriveState::inputCallback(const std_msgs::msg::String::SharedPtr \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K) {\n'}
+[2.104955] (pong_game) StderrLine: {'line': b'      |                                                                       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.105199] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:118:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kbool DriveState::checkLineCrosses()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.105438] (pong_game) StderrLine: {'line': b'  118 | bool \x1b[01;31m\x1b[KDriveState\x1b[m\x1b[K::checkLineCrosses(void) {\n'}
+[2.105697] (pong_game) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.105935] (pong_game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:10\x1b[m\x1b[K:\n'}
+[2.106167] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.hpp:57:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kint DriveState::checkLineCrosses()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.106419] (pong_game) StderrLine: {'line': b'   57 |     int \x1b[01;36m\x1b[KcheckLineCrosses\x1b[m\x1b[K(void);\n'}
+[2.106681] (pong_game) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.106922] (-) TimerEvent: {}
+[2.107036] (pong_game) StderrLine: {'line': b'\x1b[01m\x1b[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.hpp:15:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DriveState\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[2.107346] (pong_game) StderrLine: {'line': b'   15 | class \x1b[01;36m\x1b[KDriveState\x1b[m\x1b[K : public State, public rclcpp::Node {\n'}
+[2.107575] (pong_game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.207047] (-) TimerEvent: {}
+[2.308542] (-) TimerEvent: {}
+[2.408969] (-) TimerEvent: {}
+[2.509470] (-) TimerEvent: {}
+[2.609899] (-) TimerEvent: {}
+[2.693199] (pong_game) StderrLine: {'line': b'gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:132: CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o] Error 1\n'}
+[2.693872] (pong_game) StderrLine: {'line': b'gmake[3]: *** Waiting for unfinished jobs....\n'}
+[2.710015] (-) TimerEvent: {}
+[2.810559] (-) TimerEvent: {}
+[2.913312] (-) TimerEvent: {}
+[3.014146] (-) TimerEvent: {}
+[3.114632] (-) TimerEvent: {}
+[3.215312] (-) TimerEvent: {}
+[3.315810] (-) TimerEvent: {}
+[3.416466] (-) TimerEvent: {}
+[3.419782] (pong_game) StderrLine: {'line': b'gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:146: CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o] Error 1\n'}
+[3.420335] (pong_game) StdoutLine: {'line': b"gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'\n"}
+[3.420874] (pong_game) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2\n'}
+[3.421324] (pong_game) StdoutLine: {'line': b"gmake[2]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'\n"}
+[3.421678] (pong_game) StderrLine: {'line': b'gmake[1]: *** [Makefile:146: all] Error 2\n'}
+[3.421971] (pong_game) StdoutLine: {'line': b"gmake[1]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'\n"}
+[3.423910] (pong_game) CommandEnded: {'returncode': 2}
+[3.441361] (pong_game) JobEnded: {'identifier': 'pong_game', 'rc': 2}
+[3.452191] (-) EventReactorShutdown: {}

@@ -2,7 +2,11 @@
 #define IDLESTATE_HPP
 
 #include "rclcpp/rclcpp.hpp"
+#include "irobot_create_msgs/msg/lightring_leds.hpp"
+#include "irobot_create_msgs/msg/interface_buttons.hpp"
+
 #include "state.hpp"
+#include "../turtlebot4.cpp"
 #include "../statemachine.hpp"
 
 // Idle State - Robot is stationary, waiting for commands
@@ -29,7 +33,12 @@ public:
     const char* getName() const override;
 
 private:
+    rclcpp::Publisher<irobot_create_msgs::msg::LightringLeds>::SharedPtr _lightringPublisher;
+    rclcpp::Subscription<irobot_create_msgs::msg::InterfaceButtons>::SharedPtr _buttonSubscription;
 
+    LightringColor _currentColor;
+
+    std::chrono::steady_clock::time_point _start;
 };
 
 #endif // IDLESTATE_HPP

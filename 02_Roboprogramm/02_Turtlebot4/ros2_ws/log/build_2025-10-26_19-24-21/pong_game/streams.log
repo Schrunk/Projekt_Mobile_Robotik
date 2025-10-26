@@ -1,0 +1,62 @@
+[0.024s] Invoking command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws -DCMAKE_INSTALL_PREFIX=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game
+[0.119s] -- The C compiler identification is GNU 11.4.0
+[0.175s] -- The CXX compiler identification is GNU 11.4.0
+[0.182s] -- Detecting C compiler ABI info
+[0.261s] -- Detecting C compiler ABI info - done
+[0.266s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.266s] -- Detecting C compile features
+[0.266s] -- Detecting C compile features - done
+[0.271s] -- Detecting CXX compiler ABI info
+[0.367s] -- Detecting CXX compiler ABI info - done
+[0.372s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.372s] -- Detecting CXX compile features
+[0.373s] -- Detecting CXX compile features - done
+[0.378s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.450s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.511s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.536s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.539s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.544s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.553s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.562s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.585s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.587s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.625s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.643s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.668s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.676s] -- Looking for pthread.h
+[0.767s] -- Looking for pthread.h - found
+[0.768s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.861s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.862s] -- Found Threads: TRUE  
+[0.891s] -- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.911s] -- Found irobot_create_msgs: 2.1.0 (/opt/ros/humble/share/irobot_create_msgs/cmake)
+[0.932s] -- Found nav2_msgs: 1.1.19 (/opt/ros/humble/share/nav2_msgs/cmake)
+[1.040s] -- Configuring done
+[1.097s] -- Generating done
+[1.120s] -- Build files have been written to: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game
+[1.126s] Invoked command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws -DCMAKE_INSTALL_PREFIX=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game
+[1.134s] Invoking command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game -- -j2 -l2
+[1.143s] gmake[1]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[1.160s] gmake[2]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[1.163s] gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[1.169s] gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[1.173s] gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[1.182s] [ 20%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/terminalPub.cpp.o[0m
+[1.182s] [ 20%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/main.cpp.o[0m
+[2.948s] [ 30%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o[0m
+[3.511s] [ 40%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o[0m
+[8.108s] [ 50%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o[0m
+[8.276s] In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.cpp:9[m[K:
+[8.276s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/laser_scan.hpp: No such file or directory
+[8.277s]     6 | #include [01;31m[K"sensor_msgs/msg/laser_scan.hpp"[m[K
+[8.277s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.277s] compilation terminated.
+[8.279s] gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:132: CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o] Error 1
+[8.279s] gmake[3]: *** Waiting for unfinished jobs....
+[10.560s] gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[10.561s] gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2
+[10.561s] gmake[2]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[10.561s] gmake[1]: *** [Makefile:146: all] Error 2
+[10.561s] gmake[1]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[10.564s] Invoked command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game -- -j2 -l2

@@ -1,0 +1,5 @@
+In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/idleState.hpp:9[m[K,
+                 from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:3[m[K:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/../turtlebot4.cpp:22:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kirobot_create_msgs::msg::LightringLeds createLightringMessage(LightringColor, const rclcpp::Time&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+   22 | static irobot_create_msgs::msg::LightringLeds [01;35m[KcreateLightringMessage[m[K(LightringColor color, const rclcpp::Time& now) {
+      |                                               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K

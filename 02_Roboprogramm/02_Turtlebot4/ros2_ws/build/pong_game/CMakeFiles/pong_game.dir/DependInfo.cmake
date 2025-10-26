@@ -15,9 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/errorState.cpp" "CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.o" "gcc" "CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.o.d"
   "/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/idleState.cpp" "CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o" "gcc" "CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o.d"
   "/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/initState.cpp" "CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o" "gcc" "CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o.d"
-  "/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/setupState.cpp" "CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.o" "gcc" "CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.o.d"
   "/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/terminalPub.cpp" "CMakeFiles/pong_game.dir/src/classes/terminalPub.cpp.o" "gcc" "CMakeFiles/pong_game.dir/src/classes/terminalPub.cpp.o.d"
-  "/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/turtlebot4.cpp" "CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.o" "gcc" "CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.o.d"
   "/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/main.cpp" "CMakeFiles/pong_game.dir/src/main.cpp.o" "gcc" "CMakeFiles/pong_game.dir/src/main.cpp.o.d"
   )
 

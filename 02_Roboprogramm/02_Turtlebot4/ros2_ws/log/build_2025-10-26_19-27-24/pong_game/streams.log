@@ -1,0 +1,159 @@
+[0.020s] Invoking command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game -- -j2 -l2
+[0.031s] gmake[1]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.058s] gmake[2]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.060s] gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target pong_game[0m
+[0.419s] gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.436s] gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.442s] [ 20%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o[0m
+[0.442s] [ 20%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o[0m
+[1.989s] In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:10[m[K:
+[1.989s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.hpp:41:13:[m[K [01;31m[Kerror: [m[K‘[01m[KSubscriber[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a template type
+[1.990s]    41 |     rclcpp::[01;31m[KSubscriber[m[K<std_msgs::msg::String>::SharedPtr _inputSubscription;
+[1.990s]       |             [01;31m[K^~~~~~~~~~[m[K
+[2.008s] In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.cpp:9[m[K:
+[2.008s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+[2.009s]    42 |     rclcpp::Subscription<[01;31m[Ksensor_msgs[m[K::msg::LaserScan>::SharedPtr _laserSubscription;
+[2.009s]       |                          [01;31m[K^~~~~~~~~~~[m[K
+[2.009s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.009s]    42 |     rclcpp::Subscription<sensor_msgs::msg::LaserScan[01;31m[K>[m[K::SharedPtr _laserSubscription;
+[2.010s]       |                                                     [01;31m[K^[m[K
+[2.010s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[2.010s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[2.011s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[2.011s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:56:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.011s]    42 |     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::[01;31m[KSharedPtr[m[K _laserSubscription;
+[2.011s]       |                                                        [01;31m[K^~~~~~~~~[m[K
+[2.012s]       |                                                                 [32m[K;[m[K
+[2.012s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:66:[m[K [01;31m[Kerror: [m[K‘[01m[K_laserSubscription[m[K’ does not name a type
+[2.012s]    42 |     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr [01;31m[K_laserSubscription[m[K;
+[2.012s]       |                                                                  [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.013s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:44:30:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ does not name a type
+[2.014s]    44 |     void laserCallback(const [01;31m[Ksensor_msgs[m[K::msg::LaserScan::SharedPtr msg);
+[2.014s]       |                              [01;31m[K^~~~~~~~~~~[m[K
+[2.014s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:44:46:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[2.014s]    44 |     void laserCallback(const sensor_msgs::msg[01;31m[K::[m[KLaserScan::SharedPtr msg);
+[2.015s]       |                                              [01;31m[K^~[m[K
+[2.015s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:44:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[2.015s]    44 |     void laserCallback[34m[K([m[Kconst sensor_msgs::msg[01;31m[K:[m[K[32m[K:[m[KLaserScan::SharedPtr msg);
+[2.016s]       |                       [34m[K~[m[K                      [01;31m[K^[m[K[32m[K~[m[K
+[2.016s]       |                                              [32m[K)[m[K
+[2.016s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:44:43:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.016s]    44 |     void laserCallback(const sensor_msgs::[01;31m[Kmsg[m[K::LaserScan::SharedPtr msg);
+[2.017s]       |                                           [01;31m[K^~~[m[K
+[2.017s]       |                                              [32m[K;[m[K
+[2.017s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:44:48:[m[K [01;31m[Kerror: [m[K‘[01m[KLaserScan[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[2.018s]    44 |     void laserCallback(const sensor_msgs::msg::[01;31m[KLaserScan[m[K::SharedPtr msg);
+[2.018s]       |                                                [01;31m[K^~~~~~~~~[m[K
+[2.019s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.hpp:56:45:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+[2.020s]    56 |     void inputCallback(const std_msgs::msg::[01;31m[KString[m[K::SharedPtr msg);
+[2.020s]       |                                             [01;31m[K^~~~~~[m[K
+[2.020s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.hpp:56:63:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+[2.020s]    56 |     void inputCallback(const std_msgs::msg::String::SharedPtr [01;31m[Kmsg[m[K);
+[2.021s]       |                                                               [01;31m[K^~~[m[K
+[2.021s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.hpp:56:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+[2.021s]    56 |     void inputCallback[34m[K([m[Kconst std_msgs::msg::String::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K);
+[2.021s]       |                       [34m[K~[m[K                                      [01;31m[K^[m[K[32m[K~~~[m[K
+[2.022s]       |                                                              [32m[K)[m[K
+[2.022s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.hpp:56:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.023s]    56 |     void inputCallback(const std_msgs::msg::String::[01;31m[KSharedPtr[m[K msg);
+[2.023s]       |                                                     [01;31m[K^~~~~~~~~[m[K
+[2.023s]       |                                                              [32m[K;[m[K
+[2.024s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.hpp:56:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+[2.024s]    56 |     void inputCallback(const std_msgs::msg::String::SharedPtr [01;31m[Kmsg[m[K);
+[2.025s]       |                                                               [01;31m[K^~~[m[K
+[2.044s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:[m[K In member function ‘[01m[Kvirtual void DriveState::onEnter()[m[K’:
+[2.045s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:32:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_inputSubscription[m[K’ was not declared in this scope; did you mean ‘[01m[K_hazardSubscription[m[K’?
+[2.045s]    32 |     [01;31m[K_inputSubscription[m[K = this->create_subscription<std_msgs::msg::String>(
+[2.045s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.046s]       |     [32m[K_hazardSubscription[m[K
+[2.047s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:32:67:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[2.047s]    32 |     _inputSubscription = this->create_subscription<std_msgs::msg::[01;31m[KString[m[K>(
+[2.048s]       |                                                                   [01;31m[K^~~~~~[m[K
+[2.052s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:32:74:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KDriveState::create_subscription<<expression error> >(const char [7], int, std::_Bind_helper<false, void (DriveState::*)(...), DriveState*, const std::_Placeholder<1>&>::type)[m[K’
+[2.053s]    32 |     _inputSubscription = [01;31m[Kthis->create_subscription<std_msgs::msg::String>([m[K
+[2.053s]       |                          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.054s]    33 | [01;31m[K      "/input", 10,[m[K
+[2.054s]       |       [01;31m[K~~~~~~~~~~~~~[m[K                                                       
+[2.055s]    34 | [01;31m[K      std::bind(&DriveState::inputCallback, this, std::placeholders::_1))[m[K;
+[2.055s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K 
+[2.055s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.056s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.056s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.056s]                  from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:3[m[K:
+[2.057s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[2.057s]   219 |   [01;36m[Kcreate_subscription[m[K(
+[2.057s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.057s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.058s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:32:74:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.058s]    32 |     _inputSubscription = [01;31m[Kthis->create_subscription<std_msgs::msg::String>([m[K
+[2.058s]       |                          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.058s]    33 | [01;31m[K      "/input", 10,[m[K
+[2.059s]       |       [01;31m[K~~~~~~~~~~~~~[m[K                                                       
+[2.059s]    34 | [01;31m[K      std::bind(&DriveState::inputCallback, this, std::placeholders::_1))[m[K;
+[2.059s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K 
+[2.075s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:42:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_positionSubscription[m[K’ was not declared in this scope
+[2.076s]    42 |     [01;31m[K_positionSubscription[m[K = this->create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>(
+[2.076s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.077s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:42:75:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseWithCovarianceStamped[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’
+[2.077s]    42 |     _positionSubscription = this->create_subscription<geometry_msgs::msg::[01;31m[KPoseWithCovarianceStamped[m[K>(
+[2.077s]       |                                                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.078s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:44:42:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseWithCovarianceStamped[m[K’ in namespace ‘[01m[Kgeometry_msgs::msg[m[K’ does not name a type
+[2.078s]    44 |         [this](const geometry_msgs::msg::[01;31m[KPoseWithCovarianceStamped[m[K::SharedPtr msg) {
+[2.078s]       |                                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.079s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:[m[K In lambda function:
+[2.079s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:49:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+[2.079s]    49 |     })[01;31m[K;[m[K
+[2.079s]       |       [01;31m[K^[m[K
+[2.080s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:[m[K In member function ‘[01m[Kvirtual void DriveState::onEnter()[m[K’:
+[2.080s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:49:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[2.080s]    49 |     })[01;31m[K;[m[K
+[2.081s]       |       [01;31m[K^[m[K
+[2.081s]       |       [32m[K)[m[K
+[2.081s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:42:101:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[2.081s]    42 |     _positionSubscription = this->create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>[01;36m[K([m[K
+[2.082s]       |                                                                                                     [01;36m[K^[m[K
+[2.083s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:[m[K In member function ‘[01m[Kvirtual void DriveState::onExit()[m[K’:
+[2.083s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:79:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeomertry_msgs[m[K’ has not been declared
+[2.083s]    79 |     [01;31m[Kgeomertry_msgs[m[K::msg::Twist stopMsg;
+[2.084s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.088s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:80:5:[m[K [01;31m[Kerror: [m[K‘[01m[KstopMsg[m[K’ was not declared in this scope
+[2.089s]    80 |     [01;31m[KstopMsg[m[K.linear.x = 0.0;
+[2.089s]       |     [01;31m[K^~~~~~~[m[K
+[2.098s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:87:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_inputSubscription[m[K’ was not declared in this scope; did you mean ‘[01m[K_hazardSubscription[m[K’?
+[2.098s]    87 |     [01;31m[K_inputSubscription[m[K.reset();
+[2.098s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.099s]       |     [32m[K_hazardSubscription[m[K
+[2.101s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:[m[K At global scope:
+[2.101s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:107:53:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+[2.101s]   107 | void DriveState::inputCallback(const std_msgs::msg::[01;31m[KString[m[K::SharedPtr msg) {
+[2.102s]       |                                                     [01;31m[K^~~~~~[m[K
+[2.102s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:107:71:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+[2.102s]   107 | void DriveState::inputCallback(const std_msgs::msg::String::SharedPtr [01;31m[Kmsg[m[K) {
+[2.103s]       |                                                                       [01;31m[K^~~[m[K
+[2.103s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:107:70:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+[2.103s]   107 | void DriveState::inputCallback[34m[K([m[Kconst std_msgs::msg::String::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K) {
+[2.103s]       |                               [34m[K~[m[K                                      [01;31m[K^[m[K[32m[K~~~[m[K
+[2.104s]       |                                                                      [32m[K)[m[K
+[2.104s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:107:71:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+[2.104s]   107 | void DriveState::inputCallback(const std_msgs::msg::String::SharedPtr [01;31m[Kmsg[m[K) {
+[2.105s]       |                                                                       [01;31m[K^~~[m[K
+[2.105s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:118:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kbool DriveState::checkLineCrosses()[m[K’
+[2.105s]   118 | bool [01;31m[KDriveState[m[K::checkLineCrosses(void) {
+[2.105s]       |      [01;31m[K^~~~~~~~~~[m[K
+[2.106s] In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp:10[m[K:
+[2.106s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.hpp:57:9:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kint DriveState::checkLineCrosses()[m[K’
+[2.106s]    57 |     int [01;36m[KcheckLineCrosses[m[K(void);
+[2.106s]       |         [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[2.107s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.hpp:15:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass DriveState[m[K’ defined here
+[2.107s]    15 | class [01;36m[KDriveState[m[K : public State, public rclcpp::Node {
+[2.107s]       |       [01;36m[K^~~~~~~~~~[m[K
+[2.693s] gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:132: CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o] Error 1
+[2.694s] gmake[3]: *** Waiting for unfinished jobs....
+[3.420s] gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:146: CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o] Error 1
+[3.420s] gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[3.421s] gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2
+[3.421s] gmake[2]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[3.421s] gmake[1]: *** [Makefile:146: all] Error 2
+[3.422s] gmake[1]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[3.424s] Invoked command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game -- -j2 -l2

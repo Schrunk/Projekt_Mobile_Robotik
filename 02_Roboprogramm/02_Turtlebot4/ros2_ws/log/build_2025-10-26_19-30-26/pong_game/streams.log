@@ -1,0 +1,51 @@
+[0.015s] Invoking command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game -- -j2 -l2
+[0.017s] gmake[1]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.044s] gmake[2]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.049s] gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.062s] [35m[1mConsolidate compiler generated dependencies of target pong_game[0m
+[0.642s] gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.653s] gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.664s] [ 20%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o[0m
+[0.666s] [ 20%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o[0m
+[2.101s] In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.cpp:9[m[K:
+[2.102s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+[2.102s]    42 |     rclcpp::Subscription<[01;31m[Ksensor_msgs[m[K::msg::LaserScan>::SharedPtr _laserSubscription;
+[2.102s]       |                          [01;31m[K^~~~~~~~~~~[m[K
+[2.102s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.102s]    42 |     rclcpp::Subscription<sensor_msgs::msg::LaserScan[01;31m[K>[m[K::SharedPtr _laserSubscription;
+[2.103s]       |                                                     [01;31m[K^[m[K
+[2.103s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[2.103s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[2.103s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[2.104s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:56:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.104s]    42 |     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::[01;31m[KSharedPtr[m[K _laserSubscription;
+[2.104s]       |                                                        [01;31m[K^~~~~~~~~[m[K
+[2.105s]       |                                                                 [32m[K;[m[K
+[2.105s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:42:66:[m[K [01;31m[Kerror: [m[K‘[01m[K_laserSubscription[m[K’ does not name a type
+[2.105s]    42 |     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr [01;31m[K_laserSubscription[m[K;
+[2.105s]       |                                                                  [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.106s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:44:30:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ does not name a type
+[2.106s]    44 |     void laserCallback(const [01;31m[Ksensor_msgs[m[K::msg::LaserScan::SharedPtr msg);
+[2.106s]       |                              [01;31m[K^~~~~~~~~~~[m[K
+[2.107s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:44:46:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[2.107s]    44 |     void laserCallback(const sensor_msgs::msg[01;31m[K::[m[KLaserScan::SharedPtr msg);
+[2.107s]       |                                              [01;31m[K^~[m[K
+[2.107s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:44:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[2.107s]    44 |     void laserCallback[34m[K([m[Kconst sensor_msgs::msg[01;31m[K:[m[K[32m[K:[m[KLaserScan::SharedPtr msg);
+[2.108s]       |                       [34m[K~[m[K                      [01;31m[K^[m[K[32m[K~[m[K
+[2.108s]       |                                              [32m[K)[m[K
+[2.108s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:44:43:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.108s]    44 |     void laserCallback(const sensor_msgs::[01;31m[Kmsg[m[K::LaserScan::SharedPtr msg);
+[2.109s]       |                                           [01;31m[K^~~[m[K
+[2.109s]       |                                              [32m[K;[m[K
+[2.109s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.hpp:44:48:[m[K [01;31m[Kerror: [m[K‘[01m[KLaserScan[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[2.109s]    44 |     void laserCallback(const sensor_msgs::msg::[01;31m[KLaserScan[m[K::SharedPtr msg);
+[2.110s]       |                                                [01;31m[K^~~~~~~~~[m[K
+[2.663s] gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:132: CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o] Error 1
+[2.663s] gmake[3]: *** Waiting for unfinished jobs....
+[7.853s] gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[7.854s] gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2
+[7.854s] gmake[2]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[7.855s] gmake[1]: *** [Makefile:146: all] Error 2
+[7.855s] gmake[1]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[7.857s] Invoked command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game -- -j2 -l2

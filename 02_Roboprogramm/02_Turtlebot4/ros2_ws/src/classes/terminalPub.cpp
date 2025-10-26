@@ -1,6 +1,3 @@
-#ifndef TERMINALPUB_CPP
-#define TERMINALPUB_CPP
-
 #include <atomic>
 #include <iostream>
 #include <thread>
@@ -11,7 +8,7 @@
 
 TerminalPublisher::TerminalPublisher() : Node("terminalPublisher") {
     // publisher for user input
-    _inputPub = this->create_publisher<std_msgs::msg::String>("/userInput", 10);
+    _inputPub = this->create_publisher<std_msgs::msg::String>("/app/userInput", 10);
     _inputThread = std::thread([this]() {this->publishInput(); });
 }
 
@@ -41,5 +38,3 @@ void TerminalPublisher::publishInput() {
     std::thread _inputThread;
     std::atomic<bool> _running{true};
 }
-
-#endif // TERMINALPUB_CPP

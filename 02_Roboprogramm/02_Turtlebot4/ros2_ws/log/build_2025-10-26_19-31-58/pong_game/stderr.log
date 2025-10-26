@@ -1,0 +1,47 @@
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:[m[K In member function ‘[01m[Kvoid StateMachine::initialize()[m[K’:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:32:54:[m[K [01;31m[Kerror: [m[K‘[01m[KErrorState[m[K’ was not declared in this scope
+   32 |     registerState(StateType::ERROR, std::make_unique<[01;31m[KErrorState[m[K>(this));
+      |                                                      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:32:65:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >(StateMachine*)[m[K’
+   32 |     registerState(StateType::ERROR, [01;31m[Kstd::make_unique<ErrorState>(this)[m[K);
+      |                                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.hpp:4[m[K,
+                 from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:32:65:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   32 |     registerState(StateType::ERROR, [01;31m[Kstd::make_unique<ErrorState>(this)[m[K);
+      |                                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.hpp:4[m[K,
+                 from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)[m[K’
+  967 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:32:65:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   32 |     registerState(StateType::ERROR, [01;31m[Kstd::make_unique<ErrorState>(this)[m[K);
+      |                                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.hpp:4[m[K,
+                 from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)[m[K’ (deleted)
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:32:65:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   32 |     registerState(StateType::ERROR, [01;31m[Kstd::make_unique<ErrorState>(this)[m[K);
+      |                                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/idleState.hpp:9[m[K,
+                 from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:3[m[K:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/../turtlebot4.cpp:[m[K At global scope:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/../turtlebot4.cpp:22:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kirobot_create_msgs::msg::LightringLeds createLightringMessage(LightringColor, const rclcpp::Time&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+   22 | static irobot_create_msgs::msg::LightringLeds [01;35m[KcreateLightringMessage[m[K(LightringColor color, const rclcpp::Time& now) {
+      |                                               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:188: CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o] Error 1
+gmake[3]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2
+gmake[1]: *** [Makefile:146: all] Error 2

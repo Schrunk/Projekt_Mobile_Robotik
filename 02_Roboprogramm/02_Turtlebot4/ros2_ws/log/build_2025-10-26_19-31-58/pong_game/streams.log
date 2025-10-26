@@ -1,0 +1,61 @@
+[0.014s] Invoking command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game -- -j2 -l2
+[0.017s] gmake[1]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.047s] gmake[2]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.054s] gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.062s] [35m[1mConsolidate compiler generated dependencies of target pong_game[0m
+[0.644s] gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.654s] gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[0.659s] [ 10%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o[0m
+[0.661s] [ 20%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.o[0m
+[0.673s] [ 30%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o[0m
+[1.997s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:[m[K In member function ‘[01m[Kvoid StateMachine::initialize()[m[K’:
+[1.998s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:32:54:[m[K [01;31m[Kerror: [m[K‘[01m[KErrorState[m[K’ was not declared in this scope
+[1.998s]    32 |     registerState(StateType::ERROR, std::make_unique<[01;31m[KErrorState[m[K>(this));
+[1.998s]       |                                                      [01;31m[K^~~~~~~~~~[m[K
+[1.998s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:32:65:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >(StateMachine*)[m[K’
+[1.999s]    32 |     registerState(StateType::ERROR, [01;31m[Kstd::make_unique<ErrorState>(this)[m[K);
+[1.999s]       |                                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.999s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[2.000s]                  from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.hpp:4[m[K,
+[2.000s]                  from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:1[m[K:
+[2.000s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)[m[K’
+[2.001s]   961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+[2.001s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[2.001s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.001s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:32:65:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.002s]    32 |     registerState(StateType::ERROR, [01;31m[Kstd::make_unique<ErrorState>(this)[m[K);
+[2.002s]       |                                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[2.002s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[2.002s]                  from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.hpp:4[m[K,
+[2.003s]                  from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:1[m[K:
+[2.003s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)[m[K’
+[2.003s]   967 |     [01;36m[Kmake_unique[m[K(size_t __num)
+[2.003s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[2.004s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.004s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:32:65:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.004s]    32 |     registerState(StateType::ERROR, [01;31m[Kstd::make_unique<ErrorState>(this)[m[K);
+[2.005s]       |                                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[2.005s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[2.005s]                  from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.hpp:4[m[K,
+[2.005s]                  from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:1[m[K:
+[2.006s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)[m[K’ (deleted)
+[2.006s]   973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+[2.006s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[2.006s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.007s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:32:65:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.007s]    32 |     registerState(StateType::ERROR, [01;31m[Kstd::make_unique<ErrorState>(this)[m[K);
+[2.007s]       |                                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[2.274s] In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/idleState.hpp:9[m[K,
+[2.275s]                  from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:3[m[K:
+[2.275s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/../turtlebot4.cpp:[m[K At global scope:
+[2.275s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/../turtlebot4.cpp:22:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kirobot_create_msgs::msg::LightringLeds createLightringMessage(LightringColor, const rclcpp::Time&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[2.276s]    22 | static irobot_create_msgs::msg::LightringLeds [01;35m[KcreateLightringMessage[m[K(LightringColor color, const rclcpp::Time& now) {
+[2.276s]       |                                               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.294s] gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:188: CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o] Error 1
+[2.294s] gmake[3]: *** Waiting for unfinished jobs....
+[3.232s] gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[3.232s] gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2
+[3.233s] gmake[2]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[3.233s] gmake[1]: *** [Makefile:146: all] Error 2
+[3.233s] gmake[1]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[3.234s] Invoked command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game -- -j2 -l2

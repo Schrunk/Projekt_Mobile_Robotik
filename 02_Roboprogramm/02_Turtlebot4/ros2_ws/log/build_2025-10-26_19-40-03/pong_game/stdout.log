@@ -1,0 +1,25 @@
+gmake[1]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+gmake[2]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[35m[1mConsolidate compiler generated dependencies of target pong_game[0m
+gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[100%] Built target pong_game
+gmake[2]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+gmake[1]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+-- Install configuration: ""
+-- Up-to-date: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/lib/pong_game/pong_game
+-- Up-to-date: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/ament_index/resource_index/package_run_dependencies/pong_game
+-- Up-to-date: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/ament_index/resource_index/parent_prefix_path/pong_game
+-- Up-to-date: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/environment/ament_prefix_path.sh
+-- Up-to-date: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/environment/ament_prefix_path.dsv
+-- Up-to-date: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/environment/path.sh
+-- Up-to-date: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/environment/path.dsv
+-- Up-to-date: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/local_setup.bash
+-- Up-to-date: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/local_setup.sh
+-- Up-to-date: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/local_setup.zsh
+-- Up-to-date: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/local_setup.dsv
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/package.dsv
+-- Up-to-date: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/ament_index/resource_index/packages/pong_game
+-- Up-to-date: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/cmake/pong_gameConfig.cmake
+-- Up-to-date: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/cmake/pong_gameConfig-version.cmake
+-- Up-to-date: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/package.xml

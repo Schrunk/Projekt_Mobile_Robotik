@@ -378,30 +378,6 @@ src/classes/states/initState.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pong_game.dir/build.make CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.s
 .PHONY : src/classes/states/initState.cpp.s
 
-src/classes/states/setupState.o: src/classes/states/setupState.cpp.o
-.PHONY : src/classes/states/setupState.o
-
-# target to build an object file
-src/classes/states/setupState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pong_game.dir/build.make CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.o
-.PHONY : src/classes/states/setupState.cpp.o
-
-src/classes/states/setupState.i: src/classes/states/setupState.cpp.i
-.PHONY : src/classes/states/setupState.i
-
-# target to preprocess a source file
-src/classes/states/setupState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pong_game.dir/build.make CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.i
-.PHONY : src/classes/states/setupState.cpp.i
-
-src/classes/states/setupState.s: src/classes/states/setupState.cpp.s
-.PHONY : src/classes/states/setupState.s
-
-# target to generate assembly for a file
-src/classes/states/setupState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pong_game.dir/build.make CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.s
-.PHONY : src/classes/states/setupState.cpp.s
-
 src/classes/terminalPub.o: src/classes/terminalPub.cpp.o
 .PHONY : src/classes/terminalPub.o
 
@@ -425,30 +401,6 @@ src/classes/terminalPub.s: src/classes/terminalPub.cpp.s
 src/classes/terminalPub.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pong_game.dir/build.make CMakeFiles/pong_game.dir/src/classes/terminalPub.cpp.s
 .PHONY : src/classes/terminalPub.cpp.s
-
-src/classes/turtlebot4.o: src/classes/turtlebot4.cpp.o
-.PHONY : src/classes/turtlebot4.o
-
-# target to build an object file
-src/classes/turtlebot4.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pong_game.dir/build.make CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.o
-.PHONY : src/classes/turtlebot4.cpp.o
-
-src/classes/turtlebot4.i: src/classes/turtlebot4.cpp.i
-.PHONY : src/classes/turtlebot4.i
-
-# target to preprocess a source file
-src/classes/turtlebot4.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pong_game.dir/build.make CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.i
-.PHONY : src/classes/turtlebot4.cpp.i
-
-src/classes/turtlebot4.s: src/classes/turtlebot4.cpp.s
-.PHONY : src/classes/turtlebot4.s
-
-# target to generate assembly for a file
-src/classes/turtlebot4.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pong_game.dir/build.make CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.s
-.PHONY : src/classes/turtlebot4.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -511,15 +463,9 @@ help:
 	@echo "... src/classes/states/initState.o"
 	@echo "... src/classes/states/initState.i"
 	@echo "... src/classes/states/initState.s"
-	@echo "... src/classes/states/setupState.o"
-	@echo "... src/classes/states/setupState.i"
-	@echo "... src/classes/states/setupState.s"
 	@echo "... src/classes/terminalPub.o"
 	@echo "... src/classes/terminalPub.i"
 	@echo "... src/classes/terminalPub.s"
-	@echo "... src/classes/turtlebot4.o"
-	@echo "... src/classes/turtlebot4.i"
-	@echo "... src/classes/turtlebot4.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

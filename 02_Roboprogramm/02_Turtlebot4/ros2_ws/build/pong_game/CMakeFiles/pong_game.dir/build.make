@@ -97,24 +97,10 @@ CMakeFiles/pong_game.dir/src/classes/terminalPub.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pong_game.dir/src/classes/terminalPub.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/terminalPub.cpp -o CMakeFiles/pong_game.dir/src/classes/terminalPub.cpp.s
 
-CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.o: CMakeFiles/pong_game.dir/flags.make
-CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.o: ../../src/classes/turtlebot4.cpp
-CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.o: CMakeFiles/pong_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.o -MF CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.o.d -o CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.o -c /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/turtlebot4.cpp
-
-CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/turtlebot4.cpp > CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.i
-
-CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/turtlebot4.cpp -o CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.s
-
 CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o: CMakeFiles/pong_game.dir/flags.make
 CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o: ../../src/classes/states/initState.cpp
 CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o: CMakeFiles/pong_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o -MF CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o.d -o CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o -c /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/initState.cpp
 
 CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.i: cmake_force
@@ -128,7 +114,7 @@ CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.s: cmake_force
 CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o: CMakeFiles/pong_game.dir/flags.make
 CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o: ../../src/classes/states/idleState.cpp
 CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o: CMakeFiles/pong_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o -MF CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o.d -o CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o -c /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/idleState.cpp
 
 CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.i: cmake_force
@@ -142,7 +128,7 @@ CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.s: cmake_force
 CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o: CMakeFiles/pong_game.dir/flags.make
 CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o: ../../src/classes/states/bounceState.cpp
 CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o: CMakeFiles/pong_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o -MF CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o.d -o CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o -c /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/bounceState.cpp
 
 CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.i: cmake_force
@@ -156,7 +142,7 @@ CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.s: cmake_force
 CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o: CMakeFiles/pong_game.dir/flags.make
 CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o: ../../src/classes/states/driveState.cpp
 CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o: CMakeFiles/pong_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o -MF CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o.d -o CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o -c /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/driveState.cpp
 
 CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.i: cmake_force
@@ -170,7 +156,7 @@ CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.s: cmake_force
 CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o: CMakeFiles/pong_game.dir/flags.make
 CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o: ../../src/classes/states/backToStartState.cpp
 CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o: CMakeFiles/pong_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o -MF CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o.d -o CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o -c /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/backToStartState.cpp
 
 CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.i: cmake_force
@@ -184,7 +170,7 @@ CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.s: cmake_force
 CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.o: CMakeFiles/pong_game.dir/flags.make
 CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.o: ../../src/classes/states/errorState.cpp
 CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.o: CMakeFiles/pong_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.o -MF CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.o.d -o CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.o -c /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/errorState.cpp
 
 CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.i: cmake_force
@@ -195,24 +181,10 @@ CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/errorState.cpp -o CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.s
 
-CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.o: CMakeFiles/pong_game.dir/flags.make
-CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.o: ../../src/classes/states/setupState.cpp
-CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.o: CMakeFiles/pong_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.o -MF CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.o.d -o CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.o -c /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/setupState.cpp
-
-CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/setupState.cpp > CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.i
-
-CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/setupState.cpp -o CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.s
-
 CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o: CMakeFiles/pong_game.dir/flags.make
 CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o: ../../src/classes/statemachine.cpp
 CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o: CMakeFiles/pong_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o -MF CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o.d -o CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o -c /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp
 
 CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.i: cmake_force
@@ -227,14 +199,12 @@ CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.s: cmake_force
 pong_game_OBJECTS = \
 "CMakeFiles/pong_game.dir/src/main.cpp.o" \
 "CMakeFiles/pong_game.dir/src/classes/terminalPub.cpp.o" \
-"CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.o" \
 "CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o" \
 "CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o" \
 "CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o" \
 "CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o" \
 "CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o" \
 "CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.o" \
-"CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.o" \
 "CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o"
 
 # External object files for target pong_game
@@ -242,14 +212,12 @@ pong_game_EXTERNAL_OBJECTS =
 
 pong_game: CMakeFiles/pong_game.dir/src/main.cpp.o
 pong_game: CMakeFiles/pong_game.dir/src/classes/terminalPub.cpp.o
-pong_game: CMakeFiles/pong_game.dir/src/classes/turtlebot4.cpp.o
 pong_game: CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o
 pong_game: CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o
 pong_game: CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o
 pong_game: CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o
 pong_game: CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o
 pong_game: CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.o
-pong_game: CMakeFiles/pong_game.dir/src/classes/states/setupState.cpp.o
 pong_game: CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o
 pong_game: CMakeFiles/pong_game.dir/build.make
 pong_game: /opt/ros/humble/lib/libirobot_create_msgs__rosidl_typesupport_fastrtps_c.so
@@ -258,47 +226,35 @@ pong_game: /opt/ros/humble/lib/libirobot_create_msgs__rosidl_typesupport_fastrtp
 pong_game: /opt/ros/humble/lib/libirobot_create_msgs__rosidl_typesupport_introspection_cpp.so
 pong_game: /opt/ros/humble/lib/libirobot_create_msgs__rosidl_typesupport_cpp.so
 pong_game: /opt/ros/humble/lib/libirobot_create_msgs__rosidl_generator_py.so
-pong_game: /opt/ros/humble/lib/librclcpp.so
-pong_game: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
-pong_game: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
-pong_game: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
-pong_game: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
-pong_game: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
-pong_game: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
-pong_game: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-pong_game: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-pong_game: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
-pong_game: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
-pong_game: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
-pong_game: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
-pong_game: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
-pong_game: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
-pong_game: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
-pong_game: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-pong_game: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so
-pong_game: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
-pong_game: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
-pong_game: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
+pong_game: /opt/ros/humble/lib/librclcpp_action.so
+pong_game: /opt/ros/humble/lib/libnav2_msgs__rosidl_typesupport_fastrtps_c.so
+pong_game: /opt/ros/humble/lib/libnav2_msgs__rosidl_typesupport_fastrtps_cpp.so
+pong_game: /opt/ros/humble/lib/libnav2_msgs__rosidl_typesupport_introspection_c.so
+pong_game: /opt/ros/humble/lib/libnav2_msgs__rosidl_typesupport_introspection_cpp.so
+pong_game: /opt/ros/humble/lib/libnav2_msgs__rosidl_typesupport_cpp.so
+pong_game: /opt/ros/humble/lib/libnav2_msgs__rosidl_generator_py.so
 pong_game: /opt/ros/humble/lib/libirobot_create_msgs__rosidl_typesupport_c.so
 pong_game: /opt/ros/humble/lib/libirobot_create_msgs__rosidl_generator_c.so
-pong_game: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
-pong_game: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
-pong_game: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
-pong_game: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
-pong_game: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
-pong_game: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
-pong_game: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
-pong_game: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-pong_game: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
-pong_game: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
-pong_game: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
-pong_game: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
+pong_game: /opt/ros/humble/lib/librclcpp.so
 pong_game: /opt/ros/humble/lib/liblibstatistics_collector.so
+pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so
+pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
+pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
+pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so
+pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_cpp.so
+pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_generator_py.so
+pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_c.so
+pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_generator_c.so
+pong_game: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_c.so
+pong_game: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so
+pong_game: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so
+pong_game: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
+pong_game: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
+pong_game: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
+pong_game: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
+pong_game: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
+pong_game: /opt/ros/humble/lib/librcl_action.so
 pong_game: /opt/ros/humble/lib/librcl.so
-pong_game: /opt/ros/humble/lib/librmw_implementation.so
-pong_game: /opt/ros/humble/lib/libament_index_cpp.so
-pong_game: /opt/ros/humble/lib/librcl_logging_spdlog.so
-pong_game: /opt/ros/humble/lib/librcl_logging_interface.so
 pong_game: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
 pong_game: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
 pong_game: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
@@ -309,45 +265,75 @@ pong_game: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so
 pong_game: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
 pong_game: /opt/ros/humble/lib/librcl_yaml_param_parser.so
 pong_game: /opt/ros/humble/lib/libyaml.so
-pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so
-pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
-pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
-pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so
-pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_cpp.so
-pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_generator_py.so
-pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_c.so
-pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_generator_c.so
-pong_game: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_c.so
+pong_game: /opt/ros/humble/lib/libtracetools.so
+pong_game: /opt/ros/humble/lib/librmw_implementation.so
+pong_game: /opt/ros/humble/lib/libament_index_cpp.so
+pong_game: /opt/ros/humble/lib/librcl_logging_spdlog.so
+pong_game: /opt/ros/humble/lib/librcl_logging_interface.so
+pong_game: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
+pong_game: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
+pong_game: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
+pong_game: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
+pong_game: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 pong_game: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 pong_game: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
-pong_game: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so
+pong_game: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
+pong_game: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
+pong_game: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so
+pong_game: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
+pong_game: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 pong_game: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 pong_game: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 pong_game: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 pong_game: /opt/ros/humble/lib/librmw.so
-pong_game: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so
+pong_game: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
+pong_game: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
+pong_game: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+pong_game: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+pong_game: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 pong_game: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
-pong_game: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
+pong_game: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
+pong_game: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
+pong_game: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
+pong_game: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+pong_game: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 pong_game: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 pong_game: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 pong_game: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
-pong_game: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
+pong_game: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so
+pong_game: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
+pong_game: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_cpp.so
+pong_game: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+pong_game: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 pong_game: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 pong_game: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-pong_game: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
+pong_game: /opt/ros/humble/lib/libnav2_msgs__rosidl_typesupport_c.so
+pong_game: /opt/ros/humble/lib/libnav2_msgs__rosidl_generator_c.so
+pong_game: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
+pong_game: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
+pong_game: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
+pong_game: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
+pong_game: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
+pong_game: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
+pong_game: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_py.so
+pong_game: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
+pong_game: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 pong_game: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
 pong_game: /usr/lib/aarch64-linux-gnu/libpython3.10.so
-pong_game: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
+pong_game: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_c.so
+pong_game: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
+pong_game: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 pong_game: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
-pong_game: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
+pong_game: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_c.so
+pong_game: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
+pong_game: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 pong_game: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 pong_game: /opt/ros/humble/lib/librosidl_typesupport_c.so
 pong_game: /opt/ros/humble/lib/librosidl_runtime_c.so
 pong_game: /opt/ros/humble/lib/librcpputils.so
 pong_game: /opt/ros/humble/lib/librcutils.so
-pong_game: /opt/ros/humble/lib/libtracetools.so
 pong_game: CMakeFiles/pong_game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable pong_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable pong_game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pong_game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

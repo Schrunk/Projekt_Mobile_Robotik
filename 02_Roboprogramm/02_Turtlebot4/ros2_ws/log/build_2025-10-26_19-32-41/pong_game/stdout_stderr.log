@@ -1,0 +1,35 @@
+gmake[1]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+gmake[2]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[35m[1mConsolidate compiler generated dependencies of target pong_game[0m
+gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[ 10%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o[0m
+In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/idleState.hpp:9[m[K,
+                 from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/statemachine.cpp:3[m[K:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/src/classes/states/../turtlebot4.cpp:22:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kirobot_create_msgs::msg::LightringLeds createLightringMessage(LightringColor, const rclcpp::Time&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+   22 | static irobot_create_msgs::msg::LightringLeds [01;35m[KcreateLightringMessage[m[K(LightringColor color, const rclcpp::Time& now) {
+      |                                               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 20%] [32m[1mLinking CXX executable pong_game[0m
+gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+[100%] Built target pong_game
+gmake[2]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+gmake[1]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game'
+-- Install configuration: ""
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/lib/pong_game/pong_game
+-- Set runtime path of "/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/lib/pong_game/pong_game" to ""
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/ament_index/resource_index/package_run_dependencies/pong_game
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/ament_index/resource_index/parent_prefix_path/pong_game
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/environment/ament_prefix_path.sh
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/environment/ament_prefix_path.dsv
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/environment/path.sh
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/environment/path.dsv
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/local_setup.bash
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/local_setup.sh
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/local_setup.zsh
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/local_setup.dsv
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/package.dsv
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/ament_index/resource_index/packages/pong_game
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/cmake/pong_gameConfig.cmake
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/cmake/pong_gameConfig-version.cmake
+-- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/install/pong_game/share/pong_game/package.xml
