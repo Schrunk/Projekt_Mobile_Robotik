@@ -40,6 +40,7 @@ int main(int argc, char** argv) {
     }
 
     // Spin and update FSM in the same loop
+    rclcpp::WallRate loop_rate(100); // 100 Hz loop rate
     while (rclcpp::ok() && stateMachine->isRunning()) {
       // Process available ROS callbacks without blocking indefinitely
       executor->spin_some();
@@ -48,7 +49,7 @@ int main(int argc, char** argv) {
       stateMachine->update();
 
       // Small sleep to avoid busy-waiting; tune as needed
-      std::this_thread::sleep_for(std::chrono::milliseconds(10));
+      loop_rate.sleep();
     }
 
     rclcpp::shutdown();

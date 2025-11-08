@@ -146,8 +146,8 @@ void InitState::run() {
         }
 
         case 6: {
-            RCLCPP_INFO(this->get_logger(), "Transitioning to Idle State. Set Turtlebot to starting position.");
-            _stateMachine->transitionTo(StateType::IDLE);
+            RCLCPP_INFO(this->get_logger(), "Transitioning to BackToStart State. Set Turtlebot to starting position.");
+            _stateMachine->transitionTo(StateType::BACKTOSTART);
             break;
         }
 

@@ -122,3 +122,59 @@ void BounceState::sendRotateGoal(double radians) {
 
     (void)_rotateClient->async_send_goal(goal, send_goal_options);
 }
+
+// // erste ausgabe
+// #include <sensor_msgs/msg/laser_scan.hpp>
+// #include <cmath>
+// #include <vector>
+
+// float calculate_wall_angle(const sensor_msgs::msg::LaserScan::SharedPtr scan) {
+//     std::vector<float> angles;
+//     std::vector<float> distances;
+
+//     for (size_t i = 0; i < scan->ranges.size(); ++i) {
+//         float range = scan->ranges[i];
+//         if (range < 0.5) { // Nur nahe Punkte betrachten
+//             float angle = scan->angle_min + i * scan->angle_increment;
+//             angles.push_back(angle);
+//             distances.push_back(range);
+//         }
+//     }
+
+//     // Beispiel: Mittelwert der Winkel als grobe Wandrichtung
+//     float angle_sum = 0.0;
+//     for (float a : angles) {
+//         angle_sum += a;
+//     }
+
+//     return angles.empty() ? 0.0 : angle_sum / angles.size();
+// }
+// float bounce_angle = M_PI - wall_angle; // Spiegelung
+// set_robot_heading(bounce_angle);
+
+// // zweite Ausgabe Copilot
+
+// public:
+//     LaserScanSubscriber() : Node("laser_scan_subscriber") {
+//         subscription_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
+//             "/scan", 10,
+//             std::bind(&LaserScanSubscriber::scan_callback, this, std::placeholders::_1)
+//         );
+//     }
+
+// private:
+//     void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
+//         RCLCPP_INFO(this->get_logger(), "Received LaserScan with %zu ranges", msg->ranges.size());
+
+//         // Beispiel: Nahe Punkte auswerten
+//         for (size_t i = 0; i < msg->ranges.size(); ++i) {
+//             float range = msg->ranges[i];
+//             if (range < 0.5) {
+//                 float angle = msg->angle_min + i * msg->angle_increment;
+//                 RCLCPP_INFO(this->get_logger(), "Nahe Punkt bei Winkel: %.2f°, Entfernung: %.2f m", angle * 180.0 / M_PI, range);
+//             }
+//         }
+//     }
+
+//     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr subscription_;
+// }
