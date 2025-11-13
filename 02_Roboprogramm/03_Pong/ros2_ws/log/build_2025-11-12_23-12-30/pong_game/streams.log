@@ -1,0 +1,83 @@
+[0.014s] Invoking command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws -DCMAKE_INSTALL_PREFIX=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game
+[0.103s] -- The C compiler identification is GNU 11.4.0
+[0.176s] -- The CXX compiler identification is GNU 11.4.0
+[0.187s] -- Detecting C compiler ABI info
+[0.272s] -- Detecting C compiler ABI info - done
+[0.277s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.278s] -- Detecting C compile features
+[0.278s] -- Detecting C compile features - done
+[0.284s] -- Detecting CXX compiler ABI info
+[0.366s] -- Detecting CXX compiler ABI info - done
+[0.372s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.372s] -- Detecting CXX compile features
+[0.372s] -- Detecting CXX compile features - done
+[0.379s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.446s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.508s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.538s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.542s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.548s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.557s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.566s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.596s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.598s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.641s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.658s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.680s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.690s] -- Looking for pthread.h
+[0.774s] -- Looking for pthread.h - found
+[0.775s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.853s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.855s] -- Found Threads: TRUE  
+[0.887s] -- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.910s] -- Found irobot_create_msgs: 2.1.0 (/opt/ros/humble/share/irobot_create_msgs/cmake)
+[0.932s] -- Found nav2_msgs: 1.1.19 (/opt/ros/humble/share/nav2_msgs/cmake)
+[1.028s] -- Configuring done
+[1.080s] -- Generating done
+[1.099s] -- Build files have been written to: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game
+[1.104s] Invoked command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws -DCMAKE_INSTALL_PREFIX=/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game
+[1.109s] Invoking command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game -- -j2 -l2
+[1.111s] gmake[1]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[1.124s] gmake[2]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[1.129s] gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[1.133s] gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[1.136s] gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[1.141s] [ 20%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/main.cpp.o[0m
+[1.141s] [ 20%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/terminalPub.cpp.o[0m
+[2.730s] [ 30%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o[0m
+[3.313s] [ 40%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o[0m
+[3.771s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.cpp:[m[K In member function ‘[01m[Kvirtual void InitState::run()[m[K’:
+[3.771s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.cpp:144:52:[m[K [01;31m[Kerror: [m[K‘[01m[KBACKTOSTART[m[K’ is not a member of ‘[01m[KStateType[m[K’; did you mean ‘[01m[KBACK_TO_START[m[K’?
+[3.772s]   144 |             _stateMachine->transitionTo(StateType::[01;31m[KBACKTOSTART[m[K);
+[3.772s]       |                                                    [01;31m[K^~~~~~~~~~~[m[K
+[3.772s]       |                                                    [32m[KBACK_TO_START[m[K
+[3.782s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.cpp:[m[K In member function ‘[01m[Kvirtual void InitState::onExit()[m[K’:
+[3.783s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.cpp:158:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_inputSubscription[m[K’ was not declared in this scope; did you mean ‘[01m[K_buttonSubscription[m[K’?
+[3.783s]   158 |     [01;31m[K_inputSubscription[m[K.reset();
+[3.784s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[3.784s]       |     [32m[K_buttonSubscription[m[K
+[3.784s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.cpp:[m[K At global scope:
+[3.784s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.cpp:179:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid InitState::setPositionReference(float&, float&)[m[K’
+[3.785s]   179 | void [01;31m[KInitState[m[K::setPositionReference(float &xRef, float &yRef) {
+[3.785s]       |      [01;31m[K^~~~~~~~~[m[K
+[3.785s] In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.cpp:8[m[K:
+[3.786s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.hpp:60:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid InitState::setPositionReference(float*, float*)[m[K’
+[3.786s]    60 |     void [01;36m[KsetPositionReference[m[K(float *xRef, float *yRef);
+[3.786s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.787s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.hpp:14:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass InitState[m[K’ defined here
+[3.787s]    14 | class [01;36m[KInitState[m[K : public State, public rclcpp::Node {
+[3.787s]       |       [01;36m[K^~~~~~~~~[m[K
+[4.389s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/idleState.cpp:[m[K In member function ‘[01m[Kvirtual void IdleState::run()[m[K’:
+[4.390s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/idleState.cpp:69:48:[m[K [01;31m[Kerror: [m[K‘[01m[KBACKTOSTART[m[K’ is not a member of ‘[01m[KStateType[m[K’; did you mean ‘[01m[KBACK_TO_START[m[K’?
+[4.390s]    69 |         _stateMachine->transitionTo(StateType::[01;31m[KBACKTOSTART[m[K);
+[4.390s]       |                                                [01;31m[K^~~~~~~~~~~[m[K
+[4.391s]       |                                                [32m[KBACK_TO_START[m[K
+[5.299s] gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:104: CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o] Error 1
+[5.300s] gmake[3]: *** Waiting for unfinished jobs....
+[5.871s] gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:118: CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o] Error 1
+[5.872s] gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[5.872s] gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2
+[5.872s] gmake[2]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[5.873s] gmake[1]: *** [Makefile:146: all] Error 2
+[5.873s] gmake[1]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[5.874s] Invoked command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game -- -j2 -l2

@@ -12,7 +12,7 @@ void BackToStartState::onEnter() {
     _navClient = rclcpp_action::create_client<NavigateToPose>(this->shared_from_this(), "navigate_to_pose");
 
     // Try to send goal immediately; if server not ready, run() will retry
-    sendGoalToOrigin();
+    sendPukToOrigin();
 }
 
 void BackToStartState::run() {
@@ -21,14 +21,14 @@ void BackToStartState::run() {
         static rclcpp::Time last = this->now();
         if ((this->now() - last).seconds() > 1.0) {
             RCLCPP_WARN(this->get_logger(), "Retrying to send NavToGoal to origin...");
-            sendGoalToOrigin();
+            sendPukToOrigin();
             last = this->now();
         }
     }
 }
 
 void BackToStartState::onExit() {
-    RCLCPP_INFO(this->get_logger(), "Exiting BackToStart State");
+    RCLCPP_INFO(this->get_logger(), "Middle position reached");
     _goalSent = false;
     _navClient.reset();
 }
@@ -37,7 +37,7 @@ const char* BackToStartState::getName() const {
     return "BackToStartState";
 }
 
-void BackToStartState::sendGoalToOrigin() {
+void BackToStartState::sendPukToOrigin() {
     if (!_navClient) {
         RCLCPP_ERROR(this->get_logger(), "Navigate action client not initialized");
         return;
@@ -61,7 +61,7 @@ void BackToStartState::sendGoalToOrigin() {
     send_goal_options.result_callback = [this](const rclcpp_action::ClientGoalHandle<NavigateToPose>::WrappedResult & result) {
         switch (result.code) {
             case rclcpp_action::ResultCode::SUCCEEDED:
-                RCLCPP_INFO(this->get_logger(), "Reached origin. Switching to DRIVE.");
+                RCLCPP_DEBUG(this->get_logger(), "Reached origin. Switching to DRIVE.");
                 _stateMachine->transitionTo(StateType::DRIVE);
                 break;
             case rclcpp_action::ResultCode::ABORTED:

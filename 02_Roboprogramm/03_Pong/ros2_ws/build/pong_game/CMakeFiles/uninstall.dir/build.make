@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws
+CMAKE_SOURCE_DIR = /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game
+CMAKE_BINARY_DIR = /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/02_Turtlebot4/ros2_ws/build/pong_game/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

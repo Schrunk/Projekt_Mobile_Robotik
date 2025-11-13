@@ -33,12 +33,23 @@ public:
     const char* getName() const override;
 
 private:
+    // lightring members
     rclcpp::Publisher<irobot_create_msgs::msg::LightringLeds>::SharedPtr _lightringPublisher;
-    rclcpp::Subscription<irobot_create_msgs::msg::InterfaceButtons>::SharedPtr _buttonSubscription;
-
     LightringColor _currentColor;
 
+    // terminal input subscription
+    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr _terminalSubscription;
+    std::string _terminalInput;
+
+    void receiveUserInput(const std_msgs::msg::String::SharedPtr msg);
+
+    // button subscription    
+    rclcpp::Subscription<irobot_create_msgs::msg::InterfaceButtons>::SharedPtr _buttonSubscription;
+    bool _button{false};
+
     std::chrono::steady_clock::time_point _start;
+
+    
 };
 
 #endif // IDLESTATE_HPP

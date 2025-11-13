@@ -15,7 +15,7 @@ BounceState::BounceState(StateMachine *stateMachine)
 }
 
 void BounceState::onEnter() {
-    RCLCPP_INFO(this->get_logger(), "Entering Bounce State");
+    RCLCPP_DEBUG(this->get_logger(), "Entering Bounce State");
 
     // Publisher for cmd_vel
     _cmdVelPub = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", rclcpp::QoS(10));
@@ -45,6 +45,8 @@ void BounceState::run() {
             if (now - _backStart >= _backDuration) {
                 // Stop and move to rotation phase
                 geometry_msgs::msg::Twist stop;
+                stop.linear.x = 0.0;
+                stop.angular.z = 0.0;
                 _cmdVelPub->publish(stop);
                 _phase = Phase::Rotate;
             }
@@ -102,7 +104,7 @@ void BounceState::sendRotateGoal(double radians) {
     send_goal_options.result_callback = [this](const rclcpp_action::ClientGoalHandle<irobot_create_msgs::action::RotateAngle>::WrappedResult & result) {
         switch (result.code) {
             case rclcpp_action::ResultCode::SUCCEEDED:
-                RCLCPP_INFO(this->get_logger(), "Rotation completed successfully");
+                RCLCPP_DEBUG(this->get_logger(), "Rotation completed successfully");
                 _phase = Phase::Done;
                 break;
             case rclcpp_action::ResultCode::ABORTED:

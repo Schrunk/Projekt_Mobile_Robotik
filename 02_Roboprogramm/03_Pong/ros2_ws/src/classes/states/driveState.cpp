@@ -19,7 +19,7 @@ DriveState::DriveState(StateMachine *stateMachine)
 }
 
 void DriveState::onEnter() {
-    RCLCPP_INFO(this->get_logger(), "Entering Drive State");
+    RCLCPP_DEBUG(this->get_logger(), "Entering Drive State");
 
     // create LED ring publisher
     _lightringPublisher = this->create_publisher<irobot_create_msgs::msg::LightringLeds>(
@@ -68,15 +68,15 @@ void DriveState::run() {
         driveMsg.angular.z = 0.0; // no rotation
         _drivePublisher->publish(driveMsg);
 
-        RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 2000,
-                            "Driving forward at 0.3 m/s");
+        RCLCPP_INFO_ONCE(this->get_logger(), 
+                            "Start game. Driving forward. Press 'stop' to stop.");
         
         _timerStart = std::chrono::steady_clock::now();
     }
 }
 
 void DriveState::onExit() {
-    RCLCPP_INFO(this->get_logger(), "Exiting Drive State");
+    RCLCPP_DEBUG(this->get_logger(), "Exiting Drive State");
     // stop the robot
     geometry_msgs::msg::Twist stopMsg;
     stopMsg.linear.x = 0.0;
@@ -98,7 +98,7 @@ const char* DriveState::getName() const {
 void DriveState::bumperCallback(const irobot_create_msgs::msg::HazardDetectionVector::SharedPtr msg) {
     for (const auto& hazard : msg->detections) {
         if (hazard.type == irobot_create_msgs::msg::HazardDetection::BUMP) {
-            RCLCPP_WARN(this->get_logger(), "Bumper pressed! Transitioning to Bounce State.");
+            RCLCPP_DEBUG(this->get_logger(), "Bumper pressed! Transitioning to Bounce State.");
             _stateMachine->transitionTo(StateType::BOUNCE);
             return;
         }
@@ -108,10 +108,10 @@ void DriveState::bumperCallback(const irobot_create_msgs::msg::HazardDetectionVe
 // input callback to handle external commands
 void DriveState::inputCallback(const std_msgs::msg::String::SharedPtr msg) {
     _input = msg->data;
-    RCLCPP_INFO(this->get_logger(), "Received input: %s", _input.c_str());
+    RCLCPP_DEBUG(this->get_logger(), "Received input: %s", _input.c_str());
 
     if (_input == "stop") {
-        RCLCPP_INFO(this->get_logger(), "Stop command received! Transitioning to Idle State.");
+        RCLCPP_INFO(this->get_logger(), "Stop command received!");
         _stateMachine->transitionTo(StateType::IDLE);
     }
 }

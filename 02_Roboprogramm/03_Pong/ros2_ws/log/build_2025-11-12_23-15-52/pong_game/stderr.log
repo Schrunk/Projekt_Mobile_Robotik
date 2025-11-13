@@ -1,0 +1,41 @@
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.cpp:[m[K In member function ‘[01m[Kvirtual void InitState::run()[m[K’:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.cpp:73:38:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kfloat*[m[K’ to ‘[01m[Kfloat&[m[K’
+   73 |                 setPositionReference([01;31m[K&_xPosLine11[m[K, &_yPosLine11);
+      |                                      [01;31m[K^~~~~~~~~~~~[m[K
+      |                                      [01;31m[K|[m[K
+      |                                      [01;31m[Kfloat*[m[K
+In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.cpp:8[m[K:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.hpp:58:38:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid InitState::setPositionReference(float&, float&)[m[K’
+   58 |     void setPositionReference([01;36m[Kfloat &xRef[m[K, float &yRef);
+      |                               [01;36m[K~~~~~~~^~~~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.cpp:87:38:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kfloat*[m[K’ to ‘[01m[Kfloat&[m[K’
+   87 |                 setPositionReference([01;31m[K&_xPosLine12[m[K, &_yPosLine12);
+      |                                      [01;31m[K^~~~~~~~~~~~[m[K
+      |                                      [01;31m[K|[m[K
+      |                                      [01;31m[Kfloat*[m[K
+In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.cpp:8[m[K:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.hpp:58:38:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid InitState::setPositionReference(float&, float&)[m[K’
+   58 |     void setPositionReference([01;36m[Kfloat &xRef[m[K, float &yRef);
+      |                               [01;36m[K~~~~~~~^~~~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.cpp:102:38:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kfloat*[m[K’ to ‘[01m[Kfloat&[m[K’
+  102 |                 setPositionReference([01;31m[K&_xPosLine21[m[K, &_yPosLine21);
+      |                                      [01;31m[K^~~~~~~~~~~~[m[K
+      |                                      [01;31m[K|[m[K
+      |                                      [01;31m[Kfloat*[m[K
+In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.cpp:8[m[K:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.hpp:58:38:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid InitState::setPositionReference(float&, float&)[m[K’
+   58 |     void setPositionReference([01;36m[Kfloat &xRef[m[K, float &yRef);
+      |                               [01;36m[K~~~~~~~^~~~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.cpp:117:38:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kfloat*[m[K’ to ‘[01m[Kfloat&[m[K’
+  117 |                 setPositionReference([01;31m[K&_xPosLine22[m[K, &_yPosLine22);
+      |                                      [01;31m[K^~~~~~~~~~~~[m[K
+      |                                      [01;31m[K|[m[K
+      |                                      [01;31m[Kfloat*[m[K
+In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.cpp:8[m[K:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/initState.hpp:58:38:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid InitState::setPositionReference(float&, float&)[m[K’
+   58 |     void setPositionReference([01;36m[Kfloat &xRef[m[K, float &yRef);
+      |                               [01;36m[K~~~~~~~^~~~[m[K
+gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:104: CMakeFiles/pong_game.dir/src/classes/states/initState.cpp.o] Error 1
+gmake[3]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2
+gmake[1]: *** [Makefile:146: all] Error 2

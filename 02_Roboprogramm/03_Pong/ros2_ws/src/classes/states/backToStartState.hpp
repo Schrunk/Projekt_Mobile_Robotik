@@ -36,7 +36,7 @@ private:
     rclcpp_action::Client<NavigateToPose>::SharedPtr _navClient;
     bool _goalSent{false};
 
-    void sendGoalToOrigin();
+    void sendPukToOrigin();
 };
 
 #endif // BACK_TO_START_STATE_HPP

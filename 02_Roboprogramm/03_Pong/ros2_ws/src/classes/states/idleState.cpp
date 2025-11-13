@@ -14,7 +14,7 @@ IdleState::IdleState(StateMachine* stateMachine)
 
 
 void IdleState::onEnter() {
-    RCLCPP_INFO(this->get_logger(), "Entering Idle State");
+    RCLCPP_DEBUG(this->get_logger(), "Entering Idle State");
 
     // create LED ring publisher
     _lightringPublisher = this->create_publisher<irobot_create_msgs::msg::LightringLeds>(
@@ -34,16 +34,22 @@ void IdleState::onEnter() {
           }
       });
 
+    _terminalSubscription = this->create_subscription<std_msgs::msg::String>(
+        "/app/userInput", 10,
+        std::bind(&IdleState::receiveUserInput, this, std::placeholders::_1)
+    );
+
+    _terminalInput.clear();
+
     _start = std::chrono::steady_clock::now();
 }
 
 void IdleState::run() {
     // set LED ring to blue to indicate missing setup
-    RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 5000,
-                         "Setting lightring to BLUE in Idle State");
+    RCLCPP_INFO_ONCE(this->get_logger(), "Ready to start a game. Press Button 1 or enter \"start\" to begin.");
 
+    // setting lightring color
     auto now = std::chrono::steady_clock::now();
-
     if (_currentColor == LightringColor::BLUE && ((now - _start) >= std::chrono::milliseconds(500))) {
         _lightringPublisher->publish(createLightringMessage(LightringColor::OFF, this->get_clock()->now()));
         _start = std::chrono::steady_clock::now();
@@ -52,16 +58,33 @@ void IdleState::run() {
         _lightringPublisher->publish(createLightringMessage(LightringColor::BLUE, this->get_clock()->now()));
         _start = std::chrono::steady_clock::now();
     }
+
+    // check for terminal input to start the game
+    if (_terminalInput == "start") {
+        RCLCPP_INFO(this->get_logger(), "Let's start the game!");
+        _stateMachine->transitionTo(StateType::DRIVE);
+        _terminalInput.clear();
+    } else if (_terminalInput == "reset") {
+        RCLCPP_INFO(this->get_logger(), "Reset command received");
+        _stateMachine->transitionTo(StateType::BACK_TO_START);
+        _terminalInput.clear();
+    }
 }
 
 void IdleState::onExit() {    
     // TODO: Disable idle monitoring
     // TODO: Prepare for active state
-    RCLCPP_INFO(this->get_logger(), "Exiting Idle State");
+    RCLCPP_DEBUG(this->get_logger(), "Exiting Idle State");
     _lightringPublisher.reset();
     _buttonSubscription.reset();
+    _terminalSubscription.reset();
 }
 
 const char* IdleState::getName() const {
     return "IdleState";
+}
+
+void IdleState::receiveUserInput(const std_msgs::msg::String::SharedPtr msg) {
+    RCLCPP_INFO(this->get_logger(), "Received user input: %s", msg->data.c_str());
+    _terminalInput = msg->data;
 }

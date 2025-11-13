@@ -1,0 +1,36 @@
+[0.010s] Invoking command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game -- -j2 -l2
+[0.015s] gmake[1]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[0.035s] gmake[2]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[0.042s] gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[0.050s] [35m[1mConsolidate compiler generated dependencies of target pong_game[0m
+[0.693s] gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[0.707s] gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[0.712s] [ 20%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o[0m
+[0.713s] [ 20%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.o[0m
+[0.730s] [ 30%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o[0m
+[2.409s] [ 40%] [32m[1mLinking CXX executable pong_game[0m
+[4.089s] gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[4.100s] [100%] Built target pong_game
+[4.100s] gmake[2]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[4.107s] gmake[1]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[4.108s] Invoked command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game -- -j2 -l2
+[4.116s] Invoking command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game
+[4.117s] -- Install configuration: ""
+[4.119s] -- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/lib/pong_game/pong_game
+[4.409s] -- Set runtime path of "/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/lib/pong_game/pong_game" to ""
+[4.411s] -- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/share/ament_index/resource_index/package_run_dependencies/pong_game
+[4.415s] -- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/share/ament_index/resource_index/parent_prefix_path/pong_game
+[4.420s] -- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/share/pong_game/environment/ament_prefix_path.sh
+[4.423s] -- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/share/pong_game/environment/ament_prefix_path.dsv
+[4.427s] -- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/share/pong_game/environment/path.sh
+[4.430s] -- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/share/pong_game/environment/path.dsv
+[4.433s] -- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/share/pong_game/local_setup.bash
+[4.436s] -- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/share/pong_game/local_setup.sh
+[4.439s] -- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/share/pong_game/local_setup.zsh
+[4.442s] -- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/share/pong_game/local_setup.dsv
+[4.447s] -- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/share/pong_game/package.dsv
+[4.451s] -- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/share/ament_index/resource_index/packages/pong_game
+[4.455s] -- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/share/pong_game/cmake/pong_gameConfig.cmake
+[4.458s] -- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/share/pong_game/cmake/pong_gameConfig-version.cmake
+[4.461s] -- Installing: /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/install/pong_game/share/pong_game/package.xml
+[4.466s] Invoked command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game
