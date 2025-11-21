@@ -226,6 +226,11 @@ pong_game: /opt/ros/humble/lib/libirobot_create_msgs__rosidl_typesupport_fastrtp
 pong_game: /opt/ros/humble/lib/libirobot_create_msgs__rosidl_typesupport_introspection_cpp.so
 pong_game: /opt/ros/humble/lib/libirobot_create_msgs__rosidl_typesupport_cpp.so
 pong_game: /opt/ros/humble/lib/libirobot_create_msgs__rosidl_generator_py.so
+pong_game: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
+pong_game: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
+pong_game: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+pong_game: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
+pong_game: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
 pong_game: /opt/ros/humble/lib/librclcpp_action.so
 pong_game: /opt/ros/humble/lib/libnav2_msgs__rosidl_typesupport_fastrtps_c.so
 pong_game: /opt/ros/humble/lib/libnav2_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -235,6 +240,9 @@ pong_game: /opt/ros/humble/lib/libnav2_msgs__rosidl_typesupport_cpp.so
 pong_game: /opt/ros/humble/lib/libnav2_msgs__rosidl_generator_py.so
 pong_game: /opt/ros/humble/lib/libirobot_create_msgs__rosidl_typesupport_c.so
 pong_game: /opt/ros/humble/lib/libirobot_create_msgs__rosidl_generator_c.so
+pong_game: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
+pong_game: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
+pong_game: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 pong_game: /opt/ros/humble/lib/librclcpp.so
 pong_game: /opt/ros/humble/lib/liblibstatistics_collector.so
 pong_game: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so

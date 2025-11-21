@@ -25,19 +25,20 @@ void IdleState::onEnter() {
 
     // button subscriber
     _buttonSubscription = this->create_subscription<irobot_create_msgs::msg::InterfaceButtons>(
-      "/sensor_interface_buttons", rclcpp::SensorDataQoS(),
+      "/interface_buttons", 10,
       [this](const irobot_create_msgs::msg::InterfaceButtons::SharedPtr msg) {
-          // Check if button 1 is pressed
-          if (msg->button_1.is_pressed) {
-              RCLCPP_INFO(this->get_logger(), "Button 1 pressed - transitioning to Drive State");
+          // Check if button 2 is pressed
+          if (msg->button_2.is_pressed) {
+              RCLCPP_DEBUG(this->get_logger(), "Button 2 pressed - transitioning to Drive State");
               _stateMachine->transitionTo(StateType::DRIVE);
           }
       });
 
     _terminalSubscription = this->create_subscription<std_msgs::msg::String>(
         "/app/userInput", 10,
-        std::bind(&IdleState::receiveUserInput, this, std::placeholders::_1)
-    );
+        [this](const std_msgs::msg::String::SharedPtr msg) {
+            receiveUserInput(msg);
+    });
 
     _terminalInput.clear();
 

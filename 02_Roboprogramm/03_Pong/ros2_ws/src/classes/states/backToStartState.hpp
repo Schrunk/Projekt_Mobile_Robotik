@@ -35,8 +35,7 @@ private:
     using NavigateToPose = nav2_msgs::action::NavigateToPose;
     rclcpp_action::Client<NavigateToPose>::SharedPtr _navClient;
     bool _goalSent{false};
-
-    void sendPukToOrigin();
+    void sendBackToStart();
 };
 
 #endif // BACK_TO_START_STATE_HPP

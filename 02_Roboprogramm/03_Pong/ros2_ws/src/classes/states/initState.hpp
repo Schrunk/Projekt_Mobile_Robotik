@@ -4,6 +4,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 #include "geometry_msgs/msg/pose_with_covariance_stamped.hpp"
+#include "geometry_msgs/msg/pose_stamped.hpp"
 #include "irobot_create_msgs/msg/interface_buttons.hpp"
 #include "irobot_create_msgs/msg/lightring_leds.hpp"
 #include <string>
@@ -40,6 +41,7 @@ private:
 
     float _xPos;
     float _yPos;
+    float _yawPos{0.0f};
 
     // position references
     float _xPosLine11;
@@ -56,6 +58,9 @@ private:
     void buttonPressed(const irobot_create_msgs::msg::InterfaceButtons::SharedPtr msg);
 
     void setPositionReference(float &xRef, float &yRef);
+
+    // helper to compute yaw from quaternion
+    static double quaternionToYaw(const geometry_msgs::msg::PoseWithCovarianceStamped &msg);
 };
 
 #endif // INITSTATE_HPP

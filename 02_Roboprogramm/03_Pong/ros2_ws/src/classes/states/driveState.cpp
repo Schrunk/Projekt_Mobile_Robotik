@@ -20,12 +20,7 @@ DriveState::DriveState(StateMachine *stateMachine)
 
 void DriveState::onEnter() {
     RCLCPP_DEBUG(this->get_logger(), "Entering Drive State");
-
-    // create LED ring publisher
-    _lightringPublisher = this->create_publisher<irobot_create_msgs::msg::LightringLeds>(
-      "/cmd_lightring", rclcpp::SensorDataQoS());
-    _lightringPublisher->publish(createLightringMessage(LightringColor::GREEN, this->get_clock()->now()));
-
+    
     // creater drive command publisher
     _drivePublisher = this->create_publisher<geometry_msgs::msg::Twist>(
       "/cmd_vel", rclcpp::QoS(10));
@@ -37,12 +32,12 @@ void DriveState::onEnter() {
 
     // create hazard detection subscriber
     _hazardSubscription = this->create_subscription<irobot_create_msgs::msg::HazardDetectionVector>(
-      "/hazard_detection", 10,
+      "/hazard_detection", rclcpp::SensorDataQoS(),
       std::bind(&DriveState::bumperCallback, this, std::placeholders::_1));
 
     // position subscriber
     _positionSubscription = this->create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>(
-        "/amcl_pose", 10,
+        "/amcl_pose", rclcpp::SensorDataQoS(),
         [this](const geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr msg) {
             _yCurrentPos = msg->pose.pose.position.y;
             _xCurrentPos = msg->pose.pose.position.x;
@@ -62,7 +57,7 @@ void DriveState::onEnter() {
 
 void DriveState::run() {
     // publish drive command
-    if ((std::chrono::steady_clock::now() - _timerStart) > std::chrono::milliseconds(100)) {
+    if ((std::chrono::steady_clock::now() - _timerStart) > std::chrono::milliseconds(50)) {
         geometry_msgs::msg::Twist driveMsg;
         driveMsg.linear.x = 0.3;  // forward speed
         driveMsg.angular.z = 0.0; // no rotation

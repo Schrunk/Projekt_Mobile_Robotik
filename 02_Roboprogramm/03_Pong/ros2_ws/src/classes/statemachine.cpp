@@ -24,11 +24,11 @@ StateMachine::~StateMachine() {
 // initialize the state machine with all states
 void StateMachine::initialize() {
     // register all states
-    registerState(StateType::INIT_STATE, std::make_unique<InitState>(this));
-    registerState(StateType::IDLE, std::make_unique<IdleState>(this));
-    registerState(StateType::BOUNCE, std::make_unique<BounceState>(this));
-    registerState(StateType::DRIVE, std::make_unique<DriveState>(this));
-    registerState(StateType::BACK_TO_START, std::make_unique<BackToStartState>(this));
+    registerState(StateType::INIT_STATE, std::make_shared<InitState>(this));
+    registerState(StateType::IDLE, std::make_shared<IdleState>(this));
+    registerState(StateType::BOUNCE, std::make_shared<BounceState>(this));
+    registerState(StateType::DRIVE, std::make_shared<DriveState>(this));
+    registerState(StateType::BACK_TO_START, std::make_shared<BackToStartState>(this));
     // registerState(StateType::ERROR, std::make_unique<ErrorState>(this));
     
     // set initial state
@@ -145,6 +145,25 @@ void StateMachine::increaseScore(int player) {
 }
 
 // register a state with the state machine
-void StateMachine::registerState(StateType stateType, std::unique_ptr<State> state) {
+void StateMachine::registerState(StateType stateType, std::shared_ptr<State> state) {
     _states[stateType] = std::move(state);
+}
+
+// set start pose
+void StateMachine::setStartPose(double x, double y, double yaw) {
+    _startX = x;
+    _startY = y;
+    _startYaw = yaw;
+    _startPoseSet = true;
+}
+
+// get start pose
+bool StateMachine::getStartPose(double &x, double &y, double &yaw) const {
+    if (!_startPoseSet) {
+        return false;
+    }
+    x = _startX;
+    y = _startY;
+    yaw = _startYaw;
+    return true;
 }

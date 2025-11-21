@@ -1,5 +1,6 @@
 #include <cmath>
 #include <vector>
+#include <random>
 
 #include "rclcpp/rclcpp.hpp"
 #include "geometry_msgs/msg/twist.hpp"
@@ -19,17 +20,25 @@ void BounceState::onEnter() {
 
     // Publisher for cmd_vel
     _cmdVelPub = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", rclcpp::QoS(10));
+    // Immediately stop any current movement by publishing zero twist
+    geometry_msgs::msg::Twist stop;
+    _cmdVelPub->publish(stop);
 
     // Action client for rotate_angle
     _rotateClient = rclcpp_action::create_client<irobot_create_msgs::action::RotateAngle>(this->shared_from_this(), "/rotate_angle");
 
+    // LaserScan subscription (to detect wall orientation / proximity distribution)
+    _scanSub = this->create_subscription<sensor_msgs::msg::LaserScan>(
+        "/scan", rclcpp::SensorDataQoS(),
+        [this](const sensor_msgs::msg::LaserScan::SharedPtr msg){
+            _lastScan = *msg;
+            _haveScan = true;
+        }
+    );
+
     // Start backing up
     _phase = Phase::BackUp;
     _backStart = std::chrono::steady_clock::now();
-
-    // Immediately stop any current movement by publishing zero twist
-    geometry_msgs::msg::Twist stop;
-    _cmdVelPub->publish(stop);
 }
 
 void BounceState::run() {
@@ -48,6 +57,8 @@ void BounceState::run() {
                 stop.linear.x = 0.0;
                 stop.angular.z = 0.0;
                 _cmdVelPub->publish(stop);
+                // Before rotating, analyze scan and choose angle away from wall
+                analyzeWallAndChooseAngle();
                 _phase = Phase::Rotate;
             }
             break;
@@ -55,8 +66,9 @@ void BounceState::run() {
 
         case Phase::Rotate: {
             if (!_rotateGoalSent) {
-                // Send a +90 degree rotation goal (in radians)
-                sendRotateGoal(M_PI / 2.0);
+                // use chosen angle (fallback to random if not computed)
+                double angle = (_chosenRotateAngle == 0.0) ? randomAngleRad() : _chosenRotateAngle;
+                sendRotateGoal(angle);
                 _rotateGoalSent = true;
             }
             // Waiting for result via callback
@@ -77,9 +89,10 @@ void BounceState::onExit() {
         geometry_msgs::msg::Twist stop;
         _cmdVelPub->publish(stop);
     }
-    RCLCPP_INFO(this->get_logger(), "Exiting Bounce State");
+    RCLCPP_DEBUG(this->get_logger(), "Exiting Bounce State");
     _cmdVelPub.reset();
     _rotateClient.reset();
+    _scanSub.reset();
 }
 
 const char* BounceState::getName() const {
@@ -97,8 +110,6 @@ void BounceState::sendRotateGoal(double radians) {
 
     irobot_create_msgs::action::RotateAngle::Goal goal;
     goal.angle = radians;
-    // Optionally set max rotation speed if the field exists
-    // goal.max_rotation_speed = 1.0f; // rad/s
 
     auto send_goal_options = rclcpp_action::Client<irobot_create_msgs::action::RotateAngle>::SendGoalOptions();
     send_goal_options.result_callback = [this](const rclcpp_action::ClientGoalHandle<irobot_create_msgs::action::RotateAngle>::WrappedResult & result) {
@@ -125,58 +136,61 @@ void BounceState::sendRotateGoal(double radians) {
     (void)_rotateClient->async_send_goal(goal, send_goal_options);
 }
 
-// // erste ausgabe
-// #include <sensor_msgs/msg/laser_scan.hpp>
-// #include <cmath>
-// #include <vector>
+double BounceState::randomAngleRad() {
+    static std::random_device rd;
+    static std::mt19937 gen(rd());
+    std::uniform_int_distribution<int> dist_deg(45, 90); // ganze Grad
+    return dist_deg(gen) * M_PI / 180.0;
+}
 
-// float calculate_wall_angle(const sensor_msgs::msg::LaserScan::SharedPtr scan) {
-//     std::vector<float> angles;
-//     std::vector<float> distances;
+void BounceState::analyzeWallAndChooseAngle() {
+    if (!_haveScan) {
+        RCLCPP_WARN(this->get_logger(), "No scan available; using random angle");
+        _chosenRotateAngle = randomAngleRad();
+        return;
+    }
 
-//     for (size_t i = 0; i < scan->ranges.size(); ++i) {
-//         float range = scan->ranges[i];
-//         if (range < 0.5) { // Nur nahe Punkte betrachten
-//             float angle = scan->angle_min + i * scan->angle_increment;
-//             angles.push_back(angle);
-//             distances.push_back(range);
-//         }
-//     }
+    const auto & scan = _lastScan;
+    // Determine indices around front-left and front-right sectors.
+    // Assume angle_min .. angle_max spans typically -pi .. +pi.
+    const double frontCenter = 0.0; // forward direction
+    const double sectorWidth = M_PI / 6.0; // 30° sectors
+    double leftMin = std::numeric_limits<double>::infinity();
+    double rightMin = std::numeric_limits<double>::infinity();
 
-//     // Beispiel: Mittelwert der Winkel als grobe Wandrichtung
-//     float angle_sum = 0.0;
-//     for (float a : angles) {
-//         angle_sum += a;
-//     }
+    for (size_t i = 0; i < scan.ranges.size(); ++i) {
+        double angle = scan.angle_min + i * scan.angle_increment;
+        double r = scan.ranges[i];
+        if (r <= 0.0 || std::isnan(r) || std::isinf(r)) continue;
+        // Left sector: angles between 0 and +sectorWidth
+        if (angle >= frontCenter && angle <= frontCenter + sectorWidth) {
+            leftMin = std::min(leftMin, r);
+        }
+        // Right sector: angles between -sectorWidth and 0
+        if (angle <= frontCenter && angle >= frontCenter - sectorWidth) {
+            rightMin = std::min(rightMin, r);
+        }
+    }
 
-//     return angles.empty() ? 0.0 : angle_sum / angles.size();
-// }
-// float bounce_angle = M_PI - wall_angle; // Spiegelung
-// set_robot_heading(bounce_angle);
+    // Decide rotation direction away from closest side
+    double baseAngle = randomAngleRad();
+    if (leftMin < rightMin) {
+        // obstacle closer on left -> rotate right (negative angle)
+        _chosenRotateAngle = -baseAngle;
+        RCLCPP_DEBUG(this->get_logger(), "Wall left (%.2f vs %.2f). Rotate right %.2f deg", leftMin, rightMin, std::abs(_chosenRotateAngle)*180.0/M_PI);
+    } else if (rightMin < leftMin) {
+        // obstacle closer on right -> rotate left (positive angle)
+        _chosenRotateAngle = baseAngle;
+        RCLCPP_DEBUG(this->get_logger(), "Wall right (%.2f vs %.2f). Rotate left %.2f deg", rightMin, leftMin, std::abs(_chosenRotateAngle)*180.0/M_PI);
+    } else {
+        // equal or no data -> fallback
+        _chosenRotateAngle = baseAngle;
+        RCLCPP_DEBUG(this->get_logger(), "Wall ambiguous (%.2f vs %.2f). Fallback rotate %.2f deg", leftMin, rightMin, std::abs(_chosenRotateAngle)*180.0/M_PI);
+    }
+}
 
-// // zweite Ausgabe Copilot
-
-// public:
-//     LaserScanSubscriber() : Node("laser_scan_subscriber") {
-//         subscription_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
-//             "/scan", 10,
-//             std::bind(&LaserScanSubscriber::scan_callback, this, std::placeholders::_1)
-//         );
-//     }
-
-// private:
-//     void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
-//         RCLCPP_INFO(this->get_logger(), "Received LaserScan with %zu ranges", msg->ranges.size());
-
-//         // Beispiel: Nahe Punkte auswerten
-//         for (size_t i = 0; i < msg->ranges.size(); ++i) {
-//             float range = msg->ranges[i];
-//             if (range < 0.5) {
-//                 float angle = msg->angle_min + i * msg->angle_increment;
-//                 RCLCPP_INFO(this->get_logger(), "Nahe Punkt bei Winkel: %.2f°, Entfernung: %.2f m", angle * 180.0 / M_PI, range);
-//             }
-//         }
-//     }
-
-//     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr subscription_;
-// }
+double BounceState::normalizeAngle(double a) {
+    while (a > M_PI) a -= 2.0 * M_PI;
+    while (a < -M_PI) a += 2.0 * M_PI;
+    return a;
+}

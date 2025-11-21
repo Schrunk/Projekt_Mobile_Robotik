@@ -5,6 +5,7 @@
 #include "geometry_msgs/msg/twist.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
 #include "irobot_create_msgs/action/rotate_angle.hpp"
+#include "sensor_msgs/msg/laser_scan.hpp"
 
 #include "state.hpp"
 #include "../statemachine.hpp"
@@ -36,10 +37,19 @@ private:
 
     // timing and state
     std::chrono::steady_clock::time_point _backStart;
-    std::chrono::milliseconds _backDuration{100}; // back up for 100ms
+    std::chrono::milliseconds _backDuration{300}; // back up for a bit longer to clear wall
     bool _rotateGoalSent = false;
 
+    // LaserScan data
+    rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr _scanSub;
+    sensor_msgs::msg::LaserScan _lastScan;
+    bool _haveScan{false};
+    double _chosenRotateAngle{0.0};
+
     void sendRotateGoal(double radians);
+    double randomAngleRad();
+    void analyzeWallAndChooseAngle();
+    static double normalizeAngle(double a);
 };
 
 #endif // BOUNCE_STATE_HPP

@@ -67,9 +67,15 @@ public:
     // set scores
     void increaseScore(int player);
 
+    // set start pose (initial robot pose captured in InitState)
+    void setStartPose(double x, double y, double yaw);
+
+    // get start pose (returns false if not yet set)
+    bool getStartPose(double &x, double &y, double &yaw) const;
+
 private:
     // member variables
-    std::unordered_map<StateType, std::unique_ptr<State>> _states;
+    std::unordered_map<StateType, std::shared_ptr<State>> _states;
     State *_currentState;
     StateType _currentStateType;
     bool _isRunning;
@@ -91,8 +97,14 @@ private:
     int _score1{0};
     int _score2{0};
 
+    // start pose storage
+    double _startX{0.0};
+    double _startY{0.0};
+    double _startYaw{0.0};
+    bool _startPoseSet{false};
+
     // register a state with the state machine
-    void registerState(StateType stateType, std::unique_ptr<State> state);
+    void registerState(StateType stateType, std::shared_ptr<State> state);
 
 };
 

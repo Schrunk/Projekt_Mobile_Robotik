@@ -20,19 +20,20 @@ void InitState::onEnter() {
 
     // button subscription on button 2
     _buttonSubscription = this->create_subscription<irobot_create_msgs::msg::InterfaceButtons>(
-        "/sensor_interface_buttons", 10,
+        "/interface_buttons", 10,
         [this](const irobot_create_msgs::msg::InterfaceButtons::SharedPtr msg) {
             buttonPressed(msg);
     });
 
-    // position subscriber
+    // position subscriber (read current pose from /pose as PoseWithCovarianceStamped)
     _positionSubscription = this->create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>(
-        "/amcl_pose", 10,
+        "/pose", 10,
         [this](const geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr msg) {
             _yPos = msg->pose.pose.position.y;
             _xPos = msg->pose.pose.position.x;
+            _yawPos = static_cast<float>(quaternionToYaw(*msg));
             RCLCPP_DEBUG(this->get_logger(), "Current Position - x: %.2f, y: %.2f",
-                        _xPos, _yPos);           
+                        _xPos, _yPos);
     });
 }
 
@@ -41,20 +42,14 @@ void InitState::run() {
     // switch state init steps
     switch (_initSteps) {
         case 0: {
-            RCLCPP_INFO_ONCE(this->get_logger(),
+            RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 5000,
                                  "Set Roboter to initial position. Press Button 2 to continue.");
 
             if (_button) {
                 RCLCPP_DEBUG(this->get_logger(), "Button 2 detected in Init State, proceeding to next step.");
-
-                // Set the robot to the initial position
-                auto pub = this->create_publisher<geometry_msgs::msg::PoseWithCovarianceStamped>("/initialpose", 10);
-                geometry_msgs::msg::PoseWithCovarianceStamped init_pose;
-                init_pose.header.frame_id = "map";
-                init_pose.pose.pose.position.x = 0.0;
-                init_pose.pose.pose.position.y = 0.0;
-                init_pose.pose.pose.orientation.w = 1.0; // yaw=0
-                pub->publish(init_pose);
+                // Capture current pose as start pose in the state machine (dynamic start)
+                _stateMachine->setStartPose(static_cast<double>(_xPos), static_cast<double>(_yPos), static_cast<double>(_yawPos));
+                RCLCPP_INFO(this->get_logger(), "Start pose stored: x=%.2f y=%.2f yaw=%.2f deg", _xPos, _yPos, _yawPos * 180.0 / M_PI);
 
                 _initSteps++;
                 _button = false; // reset button flag
@@ -64,7 +59,7 @@ void InitState::run() {
 
         case 1: {
             RCLCPP_INFO_ONCE(this->get_logger(),
-                                 "Waiting for robot to reach corner position position. Press Button 2 to confirm.");
+                                 "Waiting for robot to reach corner position position 1.1. Press Button 2 to confirm.");
 
             if (_button) {
                 RCLCPP_DEBUG(this->get_logger(), "Button 2 detected in Init State, setting corner position 1.1.");
@@ -136,6 +131,7 @@ void InitState::run() {
             float c2 = _xPosLine22 * _yPosLine21 - _yPosLine22 * _xPosLine21;
 
             _stateMachine->setLineReference(a1, b1, c1, a2, b2, c2);
+            _initSteps++;
             break;
         }
 
@@ -180,4 +176,12 @@ void InitState::setPositionReference(float &xRef, float &yRef) {
     yRef = _yPos;
 
     RCLCPP_DEBUG(this->get_logger(), "Position reference set to x: %.2f, y: %.2f", xRef, yRef);
+}
+
+// overload for PoseWithCovarianceStamped
+double InitState::quaternionToYaw(const geometry_msgs::msg::PoseWithCovarianceStamped &msg) {
+    const auto & q = msg.pose.pose.orientation;
+    double siny_cosp = 2.0 * (q.w * q.z + q.x * q.y);
+    double cosy_cosp = 1.0 - 2.0 * (q.y * q.y + q.z * q.z);
+    return std::atan2(siny_cosp, cosy_cosp);
 }

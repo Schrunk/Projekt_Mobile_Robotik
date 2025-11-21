@@ -31,7 +31,7 @@ void TerminalPublisher::publishInput() {
         message.data = input;
         _inputPub->publish(message);
 
-        RCLCPP_INFO(this->get_logger(), "Published user input: %s", input.c_str());
+        RCLCPP_DEBUG(this->get_logger(), "Published user input: %s", input.c_str());
     }
 
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr _inputPub;
