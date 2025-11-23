@@ -1,0 +1,23 @@
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/backToStartState.cpp:[m[K In member function ‘[01m[Kvoid BackToStartState::sendBackToStart()[m[K’:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/backToStartState.cpp:58:38:[m[K [01;31m[Kerror: [m[K‘[01m[Ksx[m[K’ was not declared in this scope
+   58 |     if (!_stateMachine->getStartPose([01;31m[Ksx[m[K, sy, syaw)) {
+      |                                      [01;31m[K^~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/backToStartState.cpp:58:42:[m[K [01;31m[Kerror: [m[K‘[01m[Ksy[m[K’ was not declared in this scope
+   58 |     if (!_stateMachine->getStartPose(sx, [01;31m[Ksy[m[K, syaw)) {
+      |                                          [01;31m[K^~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/backToStartState.cpp:58:46:[m[K [01;31m[Kerror: [m[K‘[01m[Ksyaw[m[K’ was not declared in this scope
+   58 |     if (!_stateMachine->getStartPose(sx, sy, [01;31m[Ksyaw[m[K)) {
+      |                                              [01;31m[K^~~~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/backToStartState.cpp:67:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ksx[m[K’ was not declared in this scope
+   67 |     goal.pose.pose.position.x = [01;31m[Ksx[m[K;
+      |                                 [01;31m[K^~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/backToStartState.cpp:68:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ksy[m[K’ was not declared in this scope
+   68 |     goal.pose.pose.position.y = [01;31m[Ksy[m[K;
+      |                                 [01;31m[K^~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/backToStartState.cpp:72:45:[m[K [01;31m[Kerror: [m[K‘[01m[Ksyaw[m[K’ was not declared in this scope
+   72 |     goal.pose.pose.orientation.z = std::sin([01;31m[Ksyaw[m[K / 2.0);
+      |                                             [01;31m[K^~~~[m[K
+gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:160: CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o] Error 1
+gmake[3]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2
+gmake[1]: *** [Makefile:146: all] Error 2

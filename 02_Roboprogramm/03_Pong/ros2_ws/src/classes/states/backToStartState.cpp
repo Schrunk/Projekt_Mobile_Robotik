@@ -23,7 +23,7 @@ void BackToStartState::run() {
     if (!_goalSent) {
         // Retry sending goal if it wasn't sent yet (e.g., server not available)
         static rclcpp::Time last = this->now();
-        if ((this->now() - last).seconds() > 15.0) {
+        if ((this->now() - last).seconds() > 1.0) {
             RCLCPP_WARN(this->get_logger(), "Retrying to send NavToGoal to start pose...");
             sendBackToStart();
             last = this->now();
@@ -57,8 +57,11 @@ void BackToStartState::sendBackToStart() {
     // Obtain stored start pose from state machine
     double sx, sy, syaw;
     if (!_stateMachine->getStartPose(sx, sy, syaw)) {
-        RCLCPP_ERROR(this->get_logger(), "Start pose not set - restart programm!");
+        RCLCPP_ERROR(this->get_logger(), "Start pose not set - back to INIT!");
+        _stateMachine->transitionTo(StateType::INIT_STATE);
+        return;
     }
+
 
     NavigateToPose::Goal goal;
     goal.pose.header.frame_id = "map";
@@ -80,12 +83,15 @@ void BackToStartState::sendBackToStart() {
                 break;
             case rclcpp_action::ResultCode::ABORTED:
                 RCLCPP_ERROR(this->get_logger(), "Navigation aborted.");
+                _goalSent = false;
                 break;
             case rclcpp_action::ResultCode::CANCELED:
                 RCLCPP_WARN(this->get_logger(), "Navigation canceled.");
+                _goalSent = false;
                 break;
             default:
                 RCLCPP_WARN(this->get_logger(), "Unknown nav result code");
+                _goalSent = false;
                 break;
         }
     };

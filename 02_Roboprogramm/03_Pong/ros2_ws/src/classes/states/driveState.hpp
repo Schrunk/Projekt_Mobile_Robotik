@@ -35,7 +35,6 @@ public:
     const char* getName() const override;
 
 private:
-    // member variables
     // publisher
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr _drivePublisher;
     // subscribers
@@ -43,6 +42,7 @@ private:
     rclcpp::Subscription<irobot_create_msgs::msg::HazardDetectionVector>::SharedPtr _hazardSubscription;
     rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped>::SharedPtr _positionSubscription;
 
+    // member variables
     std::chrono::steady_clock::time_point _timerStart;
     std::string _input;
 

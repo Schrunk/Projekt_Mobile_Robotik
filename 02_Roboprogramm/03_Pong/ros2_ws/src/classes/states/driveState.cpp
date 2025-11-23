@@ -58,12 +58,11 @@ void DriveState::run() {
     RCLCPP_INFO_ONCE(this->get_logger(), 
                     "Start game. Driving forward. Press 'stop' to stop.");
 
-    RCLCPP_DEBUG_THROTTLE(this->get_logger(), *this->get_clock(), 5000,
-                          "Driving... Current Position - x: %.2f, y: %.2f",
-                          _xCurrentPos, _yCurrentPos);
-
     // publish drive command
     if ((std::chrono::steady_clock::now() - _timerStart) > std::chrono::milliseconds(50)) {
+        // check for line crosses
+        checkLineCrosses();
+        
         geometry_msgs::msg::Twist driveMsg;
         driveMsg.linear.x = 0.3;  // forward speed
         driveMsg.angular.z = 0.0; // no rotation
@@ -71,6 +70,10 @@ void DriveState::run() {
         
         _timerStart = std::chrono::steady_clock::now();
     }
+
+    RCLCPP_DEBUG_THROTTLE(this->get_logger(), *this->get_clock(), 5000,
+                        "Driving... Current Position - x: %.2f, y: %.2f",
+                        _xCurrentPos, _yCurrentPos);
 }
 
 void DriveState::onExit() {

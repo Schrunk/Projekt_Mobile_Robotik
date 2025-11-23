@@ -129,7 +129,6 @@ void InitState::run() {
             RCLCPP_DEBUG(this->get_logger(), "Initialization complete. Calculate goal lines.");
 
             // set position references in state machine
-            // a = y2 - y1 ; b = -(x2 - x1) ; c = x2*y1 - y2*x1
             float a1 = _yPosLine12 - _yPosLine11;
             float b1 = -(_xPosLine12 - _xPosLine11);
             float c1 = _xPosLine12 * _yPosLine11 - _yPosLine12 * _xPosLine11;

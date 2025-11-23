@@ -189,9 +189,3 @@ void BounceState::analyzeWallAndChooseAngle() {
         RCLCPP_DEBUG(this->get_logger(), "Wall ambiguous (%.2f vs %.2f). Fallback rotate %.2f deg", leftMin, rightMin, std::abs(_chosenRotateAngle)*180.0/M_PI);
     }
 }
-
-double BounceState::normalizeAngle(double a) {
-    while (a > M_PI) a -= 2.0 * M_PI;
-    while (a < -M_PI) a += 2.0 * M_PI;
-    return a;
-}

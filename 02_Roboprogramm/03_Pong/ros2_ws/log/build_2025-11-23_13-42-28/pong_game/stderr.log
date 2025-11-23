@@ -1,9 +1,0 @@
-In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/driveState.cpp:12[m[K:
-[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/driveState.hpp:16:10:[m[K [01;31m[Kfatal error: [m[K../turtlebot4.cpp: No such file or directory
-   16 | #include [01;31m[K"../turtlebot4.cpp"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:146: CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o] Error 1
-gmake[3]: *** Waiting for unfinished jobs....
-gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2
-gmake[1]: *** [Makefile:146: all] Error 2
