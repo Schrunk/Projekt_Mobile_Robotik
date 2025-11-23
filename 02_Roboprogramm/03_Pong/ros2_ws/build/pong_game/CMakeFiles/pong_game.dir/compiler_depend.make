@@ -751,7 +751,6 @@ CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o: ../../src/classes/state
   ../../src/classes/states/state.hpp \
   ../../src/classes/statemachine.hpp \
   ../../src/classes/states/idleState.hpp \
-  ../../src/classes/turtlebot4.cpp \
   ../../src/classes/states/bounceState.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
@@ -836,6 +835,12 @@ CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o: ../../src/classes/state
   /opt/ros/humble/include/irobot_create_msgs/irobot_create_msgs/action/detail/rotate_angle__builder.hpp \
   /opt/ros/humble/include/irobot_create_msgs/irobot_create_msgs/action/detail/rotate_angle__traits.hpp \
   /opt/ros/humble/include/irobot_create_msgs/irobot_create_msgs/action/detail/rotate_angle__type_support.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/laser_scan.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__builder.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__type_support.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   ../../src/classes/states/driveState.hpp \
   /opt/ros/humble/include/irobot_create_msgs/irobot_create_msgs/msg/hazard_detection_vector.hpp \
   /opt/ros/humble/include/irobot_create_msgs/irobot_create_msgs/msg/detail/hazard_detection_vector__struct.hpp \
@@ -2459,6 +2464,12 @@ CMakeFiles/pong_game.dir/src/classes/states/bounceState.cpp.o: ../../src/classes
   /opt/ros/humble/include/irobot_create_msgs/irobot_create_msgs/action/detail/rotate_angle__type_support.hpp \
   /opt/ros/humble/include/irobot_create_msgs/irobot_create_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   ../../src/classes/states/bounceState.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/laser_scan.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__builder.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__type_support.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   ../../src/classes/states/state.hpp \
   ../../src/classes/statemachine.hpp \
   ../../src/classes/states/state.hpp
@@ -3215,8 +3226,7 @@ CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o: ../../src/classes/
   ../../src/classes/states/driveState.hpp \
   ../../src/classes/states/state.hpp \
   ../../src/classes/statemachine.hpp \
-  ../../src/classes/states/state.hpp \
-  ../../src/classes/turtlebot4.cpp
+  ../../src/classes/states/state.hpp
 
 CMakeFiles/pong_game.dir/src/classes/states/errorState.cpp.o: ../../src/classes/states/errorState.cpp \
   /usr/include/stdc-predef.h
@@ -3948,7 +3958,6 @@ CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o: ../../src/classes/s
   /opt/ros/humble/include/irobot_create_msgs/irobot_create_msgs/msg/detail/button__traits.hpp \
   /opt/ros/humble/include/irobot_create_msgs/irobot_create_msgs/msg/detail/interface_buttons__type_support.hpp \
   ../../src/classes/states/state.hpp \
-  ../../src/classes/turtlebot4.cpp \
   ../../src/classes/statemachine.hpp \
   ../../src/classes/states/state.hpp
 
@@ -6162,6 +6171,14 @@ CMakeFiles/pong_game.dir/src/main.cpp.o: ../../src/main.cpp \
 
 ../../src/classes/states/driveState.hpp:
 
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__type_support.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__builder.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__struct.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/laser_scan.hpp:
+
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__type_support.hpp:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__builder.hpp:
@@ -6453,8 +6470,6 @@ CMakeFiles/pong_game.dir/src/main.cpp.o: ../../src/main.cpp \
 /opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
-
-../../src/classes/turtlebot4.cpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp:
 
@@ -6982,6 +6997,8 @@ CMakeFiles/pong_game.dir/src/main.cpp.o: ../../src/main.cpp \
 
 /usr/include/alloca.h:
 
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/time64.h:
@@ -7467,6 +7484,8 @@ CMakeFiles/pong_game.dir/src/main.cpp.o: ../../src/main.cpp \
 /opt/ros/humble/include/rcutils/rcutils/error_handling.h:
 
 /usr/include/c++/11/stdlib.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__traits.hpp:
 
 /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp:
 

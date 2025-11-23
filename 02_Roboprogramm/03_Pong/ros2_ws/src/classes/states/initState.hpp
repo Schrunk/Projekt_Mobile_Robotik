@@ -33,7 +33,16 @@ public:
     const char* getName() const override;
 
 private:
+    // terminal input subscription
+    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr _terminalSubscription;
+    std::string _terminalInput;
+
+    void receiveUserInput(const std_msgs::msg::String::SharedPtr msg);
+
+    // button subscription
     rclcpp::Subscription<irobot_create_msgs::msg::InterfaceButtons>::SharedPtr _buttonSubscription;
+
+    // position subscription
     rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped>::SharedPtr _positionSubscription;
 
     bool _button{false};

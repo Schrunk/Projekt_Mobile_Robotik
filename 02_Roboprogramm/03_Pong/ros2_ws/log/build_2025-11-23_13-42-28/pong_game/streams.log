@@ -1,0 +1,22 @@
+[0.012s] Invoking command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game -- -j2 -l2
+[0.017s] gmake[1]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[0.036s] gmake[2]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[0.046s] gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[0.054s] [35m[1mConsolidate compiler generated dependencies of target pong_game[0m
+[0.770s] gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[0.783s] gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[0.785s] [ 10%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/idleState.cpp.o[0m
+[0.792s] [ 20%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o[0m
+[0.929s] In file included from [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/driveState.cpp:12[m[K:
+[0.929s] [01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/driveState.hpp:16:10:[m[K [01;31m[Kfatal error: [m[K../turtlebot4.cpp: No such file or directory
+[0.931s]    16 | #include [01;31m[K"../turtlebot4.cpp"[m[K
+[0.931s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.931s] compilation terminated.
+[0.933s] gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:146: CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o] Error 1
+[0.933s] gmake[3]: *** Waiting for unfinished jobs....
+[5.412s] gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[5.413s] gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2
+[5.413s] gmake[2]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[5.413s] gmake[1]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[5.414s] gmake[1]: *** [Makefile:146: all] Error 2
+[5.415s] Invoked command in '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game -- -j2 -l2

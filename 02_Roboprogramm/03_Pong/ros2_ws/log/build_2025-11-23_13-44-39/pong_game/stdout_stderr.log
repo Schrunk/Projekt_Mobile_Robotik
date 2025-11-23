@@ -1,0 +1,24 @@
+gmake[1]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+gmake[2]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[35m[1mConsolidate compiler generated dependencies of target pong_game[0m
+gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[ 20%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o[0m
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/driveState.cpp:[m[K In member function ‘[01m[Kvirtual void DriveState::onEnter()[m[K’:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/driveState.cpp:54:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_timerStart[m[K’ was not declared in this scope
+   54 |     [01;31m[K_timerStart[m[K = std::chrono::steady_clock::now();
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/driveState.cpp:[m[K In member function ‘[01m[Kvirtual void DriveState::run()[m[K’:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/driveState.cpp:66:45:[m[K [01;31m[Kerror: [m[K‘[01m[K_timerStart[m[K’ was not declared in this scope
+   66 |     if ((std::chrono::steady_clock::now() - [01;31m[K_timerStart[m[K) > std::chrono::milliseconds(50)) {
+      |                                             [01;31m[K^~~~~~~~~~~[m[K
+[ 30%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/statemachine.cpp.o[0m
+gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:146: CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o] Error 1
+gmake[3]: *** Waiting for unfinished jobs....
+gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2
+gmake[2]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+gmake[1]: *** [Makefile:146: all] Error 2
+gmake[1]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'

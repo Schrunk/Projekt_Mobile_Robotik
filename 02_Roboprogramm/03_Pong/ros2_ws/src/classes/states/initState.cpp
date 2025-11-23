@@ -35,6 +35,14 @@ void InitState::onEnter() {
             RCLCPP_DEBUG(this->get_logger(), "Current Position - x: %.2f, y: %.2f",
                         _xPos, _yPos);
     });
+
+    _terminalSubscription = this->create_subscription<std_msgs::msg::String>(
+        "/app/userInput", 10,
+        [this](const std_msgs::msg::String::SharedPtr msg) {
+            receiveUserInput(msg);
+    });
+
+    _terminalInput.clear();
 }
 
 // main execution loop for init state (non-blocking)
@@ -45,7 +53,7 @@ void InitState::run() {
             RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 5000,
                                  "Set Roboter to initial position. Press Button 2 to continue.");
 
-            if (_button) {
+            if (_button || _terminalInput == "set") {
                 RCLCPP_DEBUG(this->get_logger(), "Button 2 detected in Init State, proceeding to next step.");
                 // Capture current pose as start pose in the state machine (dynamic start)
                 _stateMachine->setStartPose(static_cast<double>(_xPos), static_cast<double>(_yPos), static_cast<double>(_yawPos));
@@ -61,7 +69,7 @@ void InitState::run() {
             RCLCPP_INFO_ONCE(this->get_logger(),
                                  "Waiting for robot to reach corner position position 1.1. Press Button 2 to confirm.");
 
-            if (_button) {
+            if (_button || _terminalInput == "set") {
                 RCLCPP_DEBUG(this->get_logger(), "Button 2 detected in Init State, setting corner position 1.1.");
 
                 // Set corner position 1.1
@@ -75,7 +83,7 @@ void InitState::run() {
         case 2: {
             RCLCPP_INFO_ONCE(this->get_logger(),
                                  "Waiting for robot to reach corner position 1.2. Press Button 2 to confirm.");
-            if (_button) {
+            if (_button || _terminalInput == "set") {
                 RCLCPP_DEBUG(this->get_logger(), "Button 2 detected in Init State, setting corner position 1.2.");
 
                 // Set corner position 1.2
@@ -90,7 +98,7 @@ void InitState::run() {
         case 3: {
             RCLCPP_INFO_ONCE(this->get_logger(),
                                  "Waiting for robot to reach corner position 2.1. Press Button 2 to confirm.");
-            if (_button) {
+            if (_button || _terminalInput == "set") {
                 RCLCPP_DEBUG(this->get_logger(), "Button 2 detected in Init State, setting corner position 2.1.");
 
                 // Set corner position 2.1
@@ -105,7 +113,7 @@ void InitState::run() {
         case 4: {
             RCLCPP_INFO_ONCE(this->get_logger(),
                 "Waiting for robot to reach corner position 2.2. Press Button 2 to confirm.");
-            if (_button) {
+            if (_button || _terminalInput == "set") {
                 RCLCPP_DEBUG(this->get_logger(), "Button 2 detected in Init State, setting corner position 2.2.");
 
                 // Set corner position 2.2
@@ -145,6 +153,8 @@ void InitState::run() {
             RCLCPP_WARN(this->get_logger(), "Init State in unknown step!");
             break;
     }
+
+    _terminalInput.clear();
 }
 
 // called when exiting the init state
@@ -184,4 +194,9 @@ double InitState::quaternionToYaw(const geometry_msgs::msg::PoseWithCovarianceSt
     double siny_cosp = 2.0 * (q.w * q.z + q.x * q.y);
     double cosy_cosp = 1.0 - 2.0 * (q.y * q.y + q.z * q.z);
     return std::atan2(siny_cosp, cosy_cosp);
+}
+
+void InitState::receiveUserInput(const std_msgs::msg::String::SharedPtr msg) {
+    RCLCPP_INFO(this->get_logger(), "Received user input: %s", msg->data.c_str());
+    _terminalInput = msg->data;
 }

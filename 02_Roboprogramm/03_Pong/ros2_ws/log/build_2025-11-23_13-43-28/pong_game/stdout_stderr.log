@@ -1,0 +1,48 @@
+gmake[1]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+gmake[2]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[35m[1mConsolidate compiler generated dependencies of target pong_game[0m
+gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+gmake[3]: Entering directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+[ 10%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o[0m
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/backToStartState.cpp:[m[K In member function ‘[01m[Kvoid BackToStartState::sendBackToStart()[m[K’:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/backToStartState.cpp:58:38:[m[K [01;31m[Kerror: [m[K‘[01m[Ksx[m[K’ was not declared in this scope
+   58 |     if (!_stateMachine->getStartPose([01;31m[Ksx[m[K, sy, syaw)) {
+      |                                      [01;31m[K^~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/backToStartState.cpp:58:42:[m[K [01;31m[Kerror: [m[K‘[01m[Ksy[m[K’ was not declared in this scope
+   58 |     if (!_stateMachine->getStartPose(sx, [01;31m[Ksy[m[K, syaw)) {
+      |                                          [01;31m[K^~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/backToStartState.cpp:58:46:[m[K [01;31m[Kerror: [m[K‘[01m[Ksyaw[m[K’ was not declared in this scope
+   58 |     if (!_stateMachine->getStartPose(sx, sy, [01;31m[Ksyaw[m[K)) {
+      |                                              [01;31m[K^~~~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/backToStartState.cpp:65:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ksx[m[K’ was not declared in this scope
+   65 |     goal.pose.pose.position.x = [01;31m[Ksx[m[K;
+      |                                 [01;31m[K^~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/backToStartState.cpp:66:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ksy[m[K’ was not declared in this scope
+   66 |     goal.pose.pose.position.y = [01;31m[Ksy[m[K;
+      |                                 [01;31m[K^~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/backToStartState.cpp:70:45:[m[K [01;31m[Kerror: [m[K‘[01m[Ksyaw[m[K’ was not declared in this scope
+   70 |     goal.pose.pose.orientation.z = std::sin([01;31m[Ksyaw[m[K / 2.0);
+      |                                             [01;31m[K^~~~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/driveState.cpp:[m[K In member function ‘[01m[Kvirtual void DriveState::onEnter()[m[K’:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/driveState.cpp:54:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_timerStart[m[K’ was not declared in this scope
+   54 |     [01;31m[K_timerStart[m[K = std::chrono::steady_clock::now();
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/driveState.cpp:[m[K In member function ‘[01m[Kvirtual void DriveState::run()[m[K’:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/driveState.cpp:66:45:[m[K [01;31m[Kerror: [m[K‘[01m[K_timerStart[m[K’ was not declared in this scope
+   66 |     if ((std::chrono::steady_clock::now() - [01;31m[K_timerStart[m[K) > std::chrono::milliseconds(50)) {
+      |                                             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/driveState.cpp:[m[K In member function ‘[01m[Kvirtual void DriveState::onExit()[m[K’:
+[01m[K/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/src/classes/states/driveState.cpp:85:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_lightringPublisher[m[K’ was not declared in this scope; did you mean ‘[01m[K_drivePublisher[m[K’?
+   85 |     [01;31m[K_lightringPublisher[m[K.reset();
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[K_drivePublisher[m[K
+gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:160: CMakeFiles/pong_game.dir/src/classes/states/backToStartState.cpp.o] Error 1
+gmake[3]: *** Waiting for unfinished jobs....
+gmake[3]: *** [CMakeFiles/pong_game.dir/build.make:146: CMakeFiles/pong_game.dir/src/classes/states/driveState.cpp.o] Error 1
+gmake[3]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+gmake[2]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+gmake[2]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pong_game.dir/all] Error 2
+gmake[1]: Leaving directory '/media/psf/Projekt_Mobile_Robotik/02_Roboprogramm/03_Pong/ros2_ws/build/pong_game'
+gmake[1]: *** [Makefile:146: all] Error 2

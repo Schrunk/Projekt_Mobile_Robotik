@@ -33,6 +33,10 @@ build: check-deps
 # Publisher starten
 run:
 	@echo "🚀 Starte $(PKG_NAME)/$(NODE_NAME) ..."
+	@bash -c "source \"$(CURDIR)/install/setup.bash\" && ros2 run $(PKG_NAME) $(NODE_NAME)"
+
+run-debug:
+	@echo "🚀 Starte $(PKG_NAME)/$(NODE_NAME) ..."
 	@bash -c "source \"$(CURDIR)/install/setup.bash\" && ros2 run $(PKG_NAME) $(NODE_NAME) --ros-args --log-level debug"
 
 # Sauber aufräumen

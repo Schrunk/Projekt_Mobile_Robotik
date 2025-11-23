@@ -13,7 +13,6 @@
 
 #include "state.hpp"
 #include "../statemachine.hpp"
-#include "../turtlebot4.cpp"
 
 class DriveState : public State, public rclcpp::Node {
 public:
@@ -38,7 +37,6 @@ public:
 private:
     // member variables
     // publisher
-    rclcpp::Publisher<irobot_create_msgs::msg::LightringLeds>::SharedPtr _lightringPublisher;
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr _drivePublisher;
     // subscribers
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr _inputSubscription;
@@ -46,7 +44,6 @@ private:
     rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped>::SharedPtr _positionSubscription;
 
     std::chrono::steady_clock::time_point _timerStart;
-    LightringColor _currentColor;
     std::string _input;
 
     // line cross members

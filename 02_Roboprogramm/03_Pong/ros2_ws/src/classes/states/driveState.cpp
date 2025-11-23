@@ -11,7 +11,6 @@
 
 #include "driveState.hpp"
 #include "../statemachine.hpp"
-#include "../turtlebot4.cpp"
 
 
 DriveState::DriveState(StateMachine *stateMachine) 
@@ -20,7 +19,7 @@ DriveState::DriveState(StateMachine *stateMachine)
 
 void DriveState::onEnter() {
     RCLCPP_DEBUG(this->get_logger(), "Entering Drive State");
-    
+
     // creater drive command publisher
     _drivePublisher = this->create_publisher<geometry_msgs::msg::Twist>(
       "/cmd_vel", rclcpp::QoS(10));
@@ -37,11 +36,11 @@ void DriveState::onEnter() {
 
     // position subscriber
     _positionSubscription = this->create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>(
-        "/amcl_pose", rclcpp::SensorDataQoS(),
+        "/pose", 10,
         [this](const geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr msg) {
             _yCurrentPos = msg->pose.pose.position.y;
             _xCurrentPos = msg->pose.pose.position.x;
-            RCLCPP_INFO(this->get_logger(), "Current Position - x: %.2f, y: %.2f",
+            RCLCPP_DEBUG(this->get_logger(), "Current Position - x: %.2f, y: %.2f",
                         _xCurrentPos, _yCurrentPos);
     });
 
@@ -56,15 +55,19 @@ void DriveState::onEnter() {
 }
 
 void DriveState::run() {
+    RCLCPP_INFO_ONCE(this->get_logger(), 
+                    "Start game. Driving forward. Press 'stop' to stop.");
+
+    RCLCPP_DEBUG_THROTTLE(this->get_logger(), *this->get_clock(), 5000,
+                          "Driving... Current Position - x: %.2f, y: %.2f",
+                          _xCurrentPos, _yCurrentPos);
+
     // publish drive command
     if ((std::chrono::steady_clock::now() - _timerStart) > std::chrono::milliseconds(50)) {
         geometry_msgs::msg::Twist driveMsg;
         driveMsg.linear.x = 0.3;  // forward speed
         driveMsg.angular.z = 0.0; // no rotation
         _drivePublisher->publish(driveMsg);
-
-        RCLCPP_INFO_ONCE(this->get_logger(), 
-                            "Start game. Driving forward. Press 'stop' to stop.");
         
         _timerStart = std::chrono::steady_clock::now();
     }
@@ -79,7 +82,6 @@ void DriveState::onExit() {
     _drivePublisher->publish(stopMsg);
 
     // clean up publishers and subscriptions
-    _lightringPublisher.reset();
     _drivePublisher.reset();
     _inputSubscription.reset();
     _hazardSubscription.reset();

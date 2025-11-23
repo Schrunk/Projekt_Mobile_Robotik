@@ -6,7 +6,6 @@
 #include "irobot_create_msgs/msg/interface_buttons.hpp"
 
 #include "state.hpp"
-#include "../turtlebot4.cpp"
 #include "../statemachine.hpp"
 
 // Idle State - Robot is stationary, waiting for commands
@@ -33,10 +32,6 @@ public:
     const char* getName() const override;
 
 private:
-    // lightring members
-    rclcpp::Publisher<irobot_create_msgs::msg::LightringLeds>::SharedPtr _lightringPublisher;
-    LightringColor _currentColor;
-
     // terminal input subscription
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr _terminalSubscription;
     std::string _terminalInput;

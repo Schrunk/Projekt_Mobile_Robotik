@@ -19,10 +19,11 @@ void BackToStartState::onEnter() {
 
 void BackToStartState::run() {
     RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 5000, "Driving to start position...");
+
     if (!_goalSent) {
         // Retry sending goal if it wasn't sent yet (e.g., server not available)
         static rclcpp::Time last = this->now();
-        if ((this->now() - last).seconds() > 1.0) {
+        if ((this->now() - last).seconds() > 15.0) {
             RCLCPP_WARN(this->get_logger(), "Retrying to send NavToGoal to start pose...");
             sendBackToStart();
             last = this->now();
@@ -56,8 +57,7 @@ void BackToStartState::sendBackToStart() {
     // Obtain stored start pose from state machine
     double sx, sy, syaw;
     if (!_stateMachine->getStartPose(sx, sy, syaw)) {
-        RCLCPP_WARN(this->get_logger(), "Start pose not set - falling back to (0,0,0)");
-        sx = 0.0; sy = 0.0; syaw = 0.0;
+        RCLCPP_ERROR(this->get_logger(), "Start pose not set - restart programm!");
     }
 
     NavigateToPose::Goal goal;

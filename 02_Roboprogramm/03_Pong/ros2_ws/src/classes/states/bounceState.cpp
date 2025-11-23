@@ -154,21 +154,22 @@ void BounceState::analyzeWallAndChooseAngle() {
     // Determine indices around front-left and front-right sectors.
     // Assume angle_min .. angle_max spans typically -pi .. +pi.
     const double frontCenter = 0.0; // forward direction
-    const double sectorWidth = M_PI / 6.0; // 30° sectors
+    const double sectorWidth = M_PI / 4.0; // 45° sectors
     double leftMin = std::numeric_limits<double>::infinity();
     double rightMin = std::numeric_limits<double>::infinity();
 
     for (size_t i = 0; i < scan.ranges.size(); ++i) {
         double angle = scan.angle_min + i * scan.angle_increment;
         double r = scan.ranges[i];
+        // discard invalid readings
         if (r <= 0.0 || std::isnan(r) || std::isinf(r)) continue;
-        // Left sector: angles between 0 and +sectorWidth
+        // right sector: angles between 0 and +sectorWidth
         if (angle >= frontCenter && angle <= frontCenter + sectorWidth) {
-            leftMin = std::min(leftMin, r);
-        }
-        // Right sector: angles between -sectorWidth and 0
-        if (angle <= frontCenter && angle >= frontCenter - sectorWidth) {
             rightMin = std::min(rightMin, r);
+        }
+        // left sector: angles between -sectorWidth and 0
+        if (angle <= frontCenter && angle >= frontCenter - sectorWidth) {
+            leftMin = std::min(leftMin, r);
         }
     }
 
@@ -183,8 +184,8 @@ void BounceState::analyzeWallAndChooseAngle() {
         _chosenRotateAngle = baseAngle;
         RCLCPP_DEBUG(this->get_logger(), "Wall right (%.2f vs %.2f). Rotate left %.2f deg", rightMin, leftMin, std::abs(_chosenRotateAngle)*180.0/M_PI);
     } else {
-        // equal or no data -> fallback
-        _chosenRotateAngle = baseAngle;
+        // equal or no data -> fallback 
+        _chosenRotateAngle = M_PI; // 180 degrees
         RCLCPP_DEBUG(this->get_logger(), "Wall ambiguous (%.2f vs %.2f). Fallback rotate %.2f deg", leftMin, rightMin, std::abs(_chosenRotateAngle)*180.0/M_PI);
     }
 }
